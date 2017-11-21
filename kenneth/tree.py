@@ -1,9 +1,8 @@
-from sklearn import tree
-from sklearn.datasets import load_wine
+from sklearn import tree, datasets
 import graphviz
 
 # classes in the dataset:
-# class0 
+# class0
 # class1
 # class2
 
@@ -15,7 +14,7 @@ import graphviz
 # flavanoids - diverse group of plant chemicals found in all fruits and vegetables
 # magnesium - Mg content
 
-wine = load_wine()
+wine = datasets.load_wine()
 clf = tree.DecisionTreeClassifier()
 clf = clf.fit(wine.data, wine.target)
 
@@ -25,3 +24,16 @@ rounded=True, special_characters=True)
 
 graph = graphviz.Source(dot_data)
 graph.render("wine")
+
+
+
+wine = datasets.load_iris()
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(wine.data, wine.target)
+
+dot_data = tree.export_graphviz(clf, out_file=None, feature_names=wine.feature_names,
+class_names=wine.target_names,filled=True,
+rounded=True, special_characters=True)
+
+graph = graphviz.Source(dot_data)
+graph.render("iris")
