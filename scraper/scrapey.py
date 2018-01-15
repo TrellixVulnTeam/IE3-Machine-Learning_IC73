@@ -1,29 +1,47 @@
 from recipe_scrapers import scrape_me
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+import urllib.request as url
+from bs4 import BeautifulSoup, SoupStrainer
+
+# driver = webdriver.Chrome()
+# driver.get("http://allrecipes.com/recipes/276/desserts/cakes/?page=3#2")
+# assert "Cake" in driver.title
+#
+# wait = WebDriverWait(driver, 10)
+
+response = url.urlopen("http://allrecipes.com/recipes/276/desserts/cakes/?page=3#2")
 
 
-driver = webdriver.Chrome()
-driver.get("http://allrecipes.com/recipes/276/desserts/cakes/?page=3#2")
-assert "Cake" in driver.title
-elems = driver.find_elements_by_class_name("fixed-recipe-card")
+strainer = SoupStrainer('article',{'class:', 'fixed-recipe-card'})
+soup = BeautifulSoup(response,"html.parser", parse_only=strainer)
+
+start = 'http://allrecipes.com'
+
+
 ii = 0
 
 file_name = "recipes.txt"
 
 while ii <=2:
-    for recipe in elems:
-        a_tag = recipe.find_element_by_tag_name("a")
-        link = a_tag.get_attribute("href")
-        title = scrape_me.title()
-        ingredients = scrape_me.ingredients()
-        instructions = scrape_me.instructions()
+    for link in soup.find_all('a'):
+        if link.has_attr('href'):
+            link = start + link['href']
+            try :
+                scrape_me = scrape_me(link)
+                title = scrape_me.title()
+                ingredients = scrape_me.ingredients()
+                instructions = scrape_me.instructions()
 
-        ingredients_string = ""
-        instructions_string = ""
-        for ing in ingredients :
-            ingredients_string += ing
-            ingredients_string += '\n'
-        with open(file_name, 'a') as out :
-            out.write(title + '\n' + ingredients_string + '\n' + instructions + '\n')
-        ii += 1
+                ingredients_string = ""
+                instructions_string = ""
+                for ing in ingredients :
+                    ingredients_string += ing
+                    ingredients_string += '\n'
+                with open(file_name, 'a') as out :
+                    out.write(title + '\n' + ingredients_string + '\n' + instructions + '\n')
+            except:
+                print("not a recipe")
+            ii += 1
