@@ -21,3 +21,25 @@ for ing in ingredients :
 
 with open(file_name, 'a') as out :
     out.write(title + '\n' + ingredients_string + '\n' + instructions + '\n')
+
+
+scrape_me = scrape_me('http://allrecipes.com/recipe/7703/heavenly-white-cake/')
+
+title = scrape_me.title()
+total_time = scrape_me.total_time()
+ingredients = scrape_me.ingredients()
+instructions = scrape_me.instructions()
+
+file_name = "recipes.txt"
+ingredients_string = ""
+instructions_string = ""
+for ing in ingredients :
+    ingredients_string += ing
+    ingredients_string += '\n'
+
+# for step in instructions :
+#     instructions_string += step
+#     instructions_string += " "
+
+with open(file_name, 'a') as out :
+    out.write(title + '\n' + ingredients_string + '\n' + instructions + '\n')
