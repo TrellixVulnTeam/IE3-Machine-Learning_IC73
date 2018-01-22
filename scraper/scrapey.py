@@ -12,10 +12,10 @@ from bs4 import BeautifulSoup, SoupStrainer
 #
 # wait = WebDriverWait(driver, 10)
 
-response = url.urlopen("http://allrecipes.com/recipes/362/desserts/cookies/?internalSource=hubcard&referringContentType=search%20results&clickId=cardslot%201")
+response = url.urlopen("http://allrecipes.com/recipes/276/desserts/cakes/?page=18#18")
 
 
-strainer = SoupStrainer('article',{'class:', 'fixed-recipe-card'})
+strainer = SoupStrainer('article', {'class:', 'fixed-recipe-card'})
 soup = BeautifulSoup(response,"html.parser", parse_only=strainer)
 
 start = 'http://allrecipes.com'
@@ -26,7 +26,6 @@ file_name = "allrecipes_recipes.txt"
 for link in list(set(soup.find_all('a'))):
     if link.has_attr('href'):
         print(link['href'][1:7])
-
         if link['href'][1:7] == "recipe" :
             link = start + link['href']
             print(link)
