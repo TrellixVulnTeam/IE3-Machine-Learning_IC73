@@ -105,7 +105,7 @@ for i in range(LAYER_NUM - 1):
     model.add(LSTM(HIDDEN_DIM, return_sequences=True))
 model.add(TimeDistributed(Dense(VOCAB_SIZE)))
 model.add(Activation('softmax'))
-adam = keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False) # Adam optimizer Jared told us to use
+adam = optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False) # Adam optimizer Jared told us to use
 model.compile(loss="categorical_crossentropy", optimizer=adam)
 
 nb_epoch = 0
