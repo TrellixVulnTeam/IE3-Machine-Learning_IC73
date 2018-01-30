@@ -2,8 +2,9 @@ from keras.models import Sequential
 from keras.layers import Dense, Activation, LSTM, TimeDistributed
 from keras import optimizers
 import numpy as np
+import h5py
 
-file_name = "allrecipes_recipes.txt"
+file_name = "all_files.txt"
 data = open(file_name, 'r').read()
 data = data.lower()
 data = list(data.rstrip())
@@ -13,8 +14,8 @@ VOCAB_SIZE = len(chars)
 
 
 # Some constraints that weren't explained in the tutorial so I just made up some numbers
-HIDDEN_DIM = 20
-LAYER_NUM  = 4
+HIDDEN_DIM = 200
+LAYER_NUM  = 2
 BATCH_SIZE = 10
 GENERATE_LENGTH = 100
 SEQ_LENGTH = 100
@@ -24,9 +25,6 @@ length = int(len(data)/SEQ_LENGTH)
 # Creates the mapping between the characters and orders the characters by least to most frequent I think
 ix_to_char = {ix:char for ix, char in enumerate(chars)}
 char_to_ix = {char:ix for ix, char in enumerate(chars)}
-
-
-
 
 
 def generate_text(model, length):
@@ -115,4 +113,5 @@ while True:
     nb_epoch += 1
     generate_text(model, GENERATE_LENGTH)
     if nb_epoch % 10 == 0:
-        model.save_weights('checkpoint_{}_epoch_{}.hdf5'.format(HIDDEN_DIM, nb_epoch))
+        # model.save_weights('checkpoint_{}_epoch_{}.hdf5'.format(HIDDEN_DIM, nb_epoch))
+        model.save('my_model'+str(nb_epoch)+'.h5')
