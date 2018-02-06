@@ -6,6 +6,7 @@ from keras.layers import Dense, Activation, LSTM, TimeDistributed
 from keras import optimizers
 import numpy as np
 import h5py
+import pickle
 
 file_name = "all_files.txt"
 data = open(file_name, 'r').read()
@@ -16,9 +17,9 @@ VOCAB_SIZE = len(chars)
 SEQ_LENGTH = 1000
 length = int(len(data)/SEQ_LENGTH)
 
-# Creates the mapping between the characters and orders the characters by least to most frequent I think
-ix_to_char = {ix:char for ix, char in enumerate(chars)}
-char_to_ix = {char:ix for ix, char in enumerate(chars)}
+# LOAD THE PICKLE
+with open('picklefile', 'rb') as handle:
+	[ix_to_char, char_to_ix] = pickle.load(handle)
 
 print(ix_to_char)
 
@@ -35,4 +36,4 @@ def generate_text(model, length):
 
 
 model = load_model('my_model20.h5')
-#generate_text(model, 300)
+generate_text(model, 300)

@@ -3,6 +3,7 @@ from keras.layers import Dense, Activation, LSTM, TimeDistributed
 from keras import optimizers
 import numpy as np
 import h5py
+import pickle
 
 file_name = "TolkiensMiddleEarth.txt"
 data = open(file_name, 'r').read()
@@ -25,6 +26,9 @@ length = int(len(data)/SEQ_LENGTH)
 # Creates the mapping between the characters and orders the characters by least to most frequent I think
 ix_to_char = {ix:char for ix, char in enumerate(chars)}
 char_to_ix = {char:ix for ix, char in enumerate(chars)}
+
+with open('lotr_pickle.p', 'wb') as handle:
+    pickle.dump([ix_to_char, char_to_ix], handle, protocol = pickle.HIGHEST_PROTOCOL)
 
 
 def generate_text(model, length):
