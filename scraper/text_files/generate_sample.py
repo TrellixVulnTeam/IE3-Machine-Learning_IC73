@@ -8,7 +8,7 @@ import numpy as np
 import h5py
 import pickle
 
-file_name = "all_files.txt"
+file_name = "TolkiensMiddleEarth.txt"
 data = open(file_name, 'r').read()
 data = data.lower()
 data = list(data.rstrip())
@@ -18,7 +18,7 @@ SEQ_LENGTH = 1000
 length = int(len(data)/SEQ_LENGTH)
 
 # LOAD THE PICKLE
-with open('picklefile', 'rb') as handle:
+with open('lotr_pickle.p', 'rb') as handle:
 	[ix_to_char, char_to_ix] = pickle.load(handle)
 
 print(ix_to_char)
@@ -35,5 +35,7 @@ def generate_text(model, length):
     return ('').join(y_char)
 
 
-model = load_model('my_model20.h5')
+model = load_model('tolkienmodel40.h5')
+print("\n")
 generate_text(model, 300)
+print("\n")
