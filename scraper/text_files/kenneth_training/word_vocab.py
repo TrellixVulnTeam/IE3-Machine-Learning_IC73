@@ -4,10 +4,10 @@ from keras import optimizers
 import h5py
 import numpy as np
 import pickle
+import gc
 
 
-
-f = open("all_files.txt", 'r')
+f = open("half.txt", 'r')
 
 all_words = map(lambda l: l.split(" "), f.readlines())
 # vocab = {}
@@ -29,6 +29,7 @@ for line in all_words :
         more_words.append(word)
 
 
+
 data = []
 for key in more_words :
     word = key
@@ -39,17 +40,15 @@ for key in more_words :
 chars = list(set(data))
 VOCAB_SIZE = len(chars)
 
-
-
-
 # Some constraints that weren't explained in the tutorial so I just made up some numbers
 HIDDEN_DIM = 200
 LAYER_NUM  = 2
-BATCH_SIZE = 10
+BATCH_SIZE = 4
 GENERATE_LENGTH = 100
-SEQ_LENGTH = 180
+SEQ_LENGTH = 200
 
 length = int(len(data)/SEQ_LENGTH)
+
 
 # Creates the mapping between the characters and orders the characters by least to most frequent
 # only need to run once. later, just load it from pickle file
@@ -100,7 +99,7 @@ print(int(len(data)))
 print(length)
 print(SEQ_LENGTH)
 print(VOCAB_SIZE)
-#
+
 #
 #
 # Create a training array for *length* number of sequences
@@ -121,48 +120,47 @@ for i in range(0, length):
     y[i] = target_sequence
 print(X)
 print(y)
+
+# Sequential is just a stack of layers
+# each layer added with model.add(...)
 #
-#
-# # Sequential is just a stack of layers
-# # each layer added with model.add(...)
-# #
-# # First layer:
-# # model.add(LSTM(HIDDEN_DIM, input_shape=(None, VOCAB_SIZE), return_sequences=True))
-# # LSTM(...) - Says we're using a Long Short Term Memory Layer
-# # HIDDEN_DIM - not sure yet, right now using random number
-# # input_shape - The dimensions of the input to the layer, in this situation, it's the number of unique characters
-# # return_sequences - also not sure what this does
-# #
-# #
-# # Second to third to last Layer:
-# # model.add(LSTM(HIDDEN_DIM, return_sequences=True))
-# # Same as first layer, but doesn't have to define the input shape
-# #
-# # Second to last layer:
-# # model.add(TimeDistributed(Dense(VOCAB_SIZE)))
-# # TimeDistributed - "This wrapper applies a layer of temporal slice of an input"
-#
-#
-#
-#
-# model = Sequential()
-#
+# First layer:
 # model.add(LSTM(HIDDEN_DIM, input_shape=(None, VOCAB_SIZE), return_sequences=True))
-# for i in range(LAYER_NUM - 1):
-#     model.add(LSTM(HIDDEN_DIM, return_sequences=True))
-# model.add(TimeDistributed(Dense(VOCAB_SIZE)))
-# model.add(Activation('softmax'))
-# #adam = optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False) # Adam optimizer Jared told us to use
-# model.compile(loss="categorical_crossentropy", optimizer="adam")
+# LSTM(...) - Says we're using a Long Short Term Memory Layer
+# HIDDEN_DIM - not sure yet, right now using random number
+# input_shape - The dimensions of the input to the layer, in this situation, it's the number of unique characters
+# return_sequences - also not sure what this does
 #
-# nb_epoch = 0
-# #load weights in future runs
-# #model.load_weights("checkpoint_200_epoch_++40.hdf5")
-# generate_text(model, GENERATE_LENGTH)
-# while True:
-#     print('\n\n')
-#     model.fit(X, y, batch_size=BATCH_SIZE, verbose=1, epochs=1)
-#     nb_epoch += 1
-#     generate_text(model, GENERATE_LENGTH)
-#     if nb_epoch % 10 == 0:
-#         model.save_weights('checkpoint_{}_epoch_+++{}.hdf5'.format(HIDDEN_DIM, nb_epoch))
+#
+# Second to third to last Layer:
+# model.add(LSTM(HIDDEN_DIM, return_sequences=True))
+# Same as first layer, but doesn't have to define the input shape
+#
+# Second to last layer:
+# model.add(TimeDistributed(Dense(VOCAB_SIZE)))
+# TimeDistributed - "This wrapper applies a layer of temporal slice of an input"
+
+
+
+
+model = Sequential()
+
+model.add(LSTM(HIDDEN_DIM, input_shape=(None, VOCAB_SIZE), return_sequences=True))
+for i in range(LAYER_NUM - 1):
+    model.add(LSTM(HIDDEN_DIM, return_sequences=True))
+model.add(TimeDistributed(Dense(VOCAB_SIZE)))
+model.add(Activation('softmax'))
+#adam = optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False) # Adam optimizer Jared told us to use
+model.compile(loss="categorical_crossentropy", optimizer="adam")
+
+nb_epoch = 0
+#load weights in future runs
+#model.load_weights("checkpoint_200_epoch_++40.hdf5")
+generate_text(model, GENERATE_LENGTH)
+while True:
+    print('\n\n')
+    model.fit(X, y, batch_size=BATCH_SIZE, verbose=1, epochs=1)
+    nb_epoch += 1
+    generate_text(model, GENERATE_LENGTH)
+    if nb_epoch % 10 == 0:
+        model.save_weights('checkpoint_{}_epoch_+++{}.hdf5'.format(HIDDEN_DIM, nb_epoch))
