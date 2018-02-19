@@ -1,0 +1,861 @@
+
+(D:\Anaconda) C:\Users\kenny>conda env list
+# conda environments:
+#
+data_env                 D:\Anaconda\envs\data_env
+py3                      D:\Anaconda\envs\py3
+root                  *  D:\Anaconda
+
+
+(D:\Anaconda) C:\Users\kenny>source activate py3
+'source' is not recognized as an internal or external command,
+operable program or batch file.
+
+(D:\Anaconda) C:\Users\kenny>activate py3
+
+(py3) C:\Users\kenny>cd desktop
+
+(py3) C:\Users\kenny\Desktop>cd ie3-machine-learning
+
+(py3) C:\Users\kenny\Desktop\IE3-Machine-Learning>cd scraper
+
+(py3) C:\Users\kenny\Desktop\IE3-Machine-Learning\scraper>cd text_files
+
+(py3) C:\Users\kenny\Desktop\IE3-Machine-Learning\scraper\text_files>cd kenneth_training
+
+(py3) C:\Users\kenny\Desktop\IE3-Machine-Learning\scraper\text_files\kenneth_training>python word_vocab.py
+D:\Anaconda\envs\py3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "word_vocab.py", line 70, in <module>
+    with open(pickle_file, "rb") as picked :
+NameError: name 'pickle_file' is not defined
+
+(py3) C:\Users\kenny\Desktop\IE3-Machine-Learning\scraper\text_files\kenneth_training>python word_vocab.py
+D:\Anaconda\envs\py3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+424645
+2359
+180
+6308
+[[[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ ...
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]]
+[[[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ ...
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]
+
+ [[0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  ...
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]
+  [0. 0. 0. ... 0. 0. 0.]]]
+2018-02-17 17:53:07.671871: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+350 degrees f 175 degrees c grease and flour a 9-inch springform pan with nonstick spray line bottom of pans with parchment paper and butter in a large bowl beat together butter and sugar in a large bowl until smooth and smooth add eggs one at a time beating well after each addition add eggs one at a time beating well after each addition add eggs one at a time beating well after each addition beat in eggs one at a time beating well after each addition beat in eggs one at a time beating well after each addition beat
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1069s 453ms/step - loss: 2.7177
+transported until set about 30 minutes let cool on a wire rack and let cool completely before cutting board at room temperature for at least 2 hours before serving dust with confectioners' sugar and butter in a large bowl set aside in a large bowl cream together the butter and sugar in a large bowl with an electric mixer on high speed beat the cream cheese and vanilla in a large bowl until smooth add the flour mixture and beat until smooth add the flour and salt in a large bowl until smooth add the flour and salt in a
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1067s 452ms/step - loss: 2.6833
+zests in a food processor until light and fluffy about 3 minutes add eggs one at a time beating well after each addition beat in egg and vanilla beat in the flour mixture and mix until well blended add the flour mixture and mix until well blended add the egg yolks and vanilla beat until smooth and smooth add the flour mixture and mix until well blended add the vanilla and vanilla extract in a large bowl until light and fluffy about 3 minutes add the egg yolks and vanilla beat until smooth add the flour mixture and mix until
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1081s 458ms/step - loss: 2.6715
+soft—about knife to puffed around edges in center of each cake with 1 1/2 cups all-purpose 1 cup white 1 1/2 teaspoons baking 1/2 teaspoon baking 1/2 teaspoon 1 cup unsalted butter cut into 1/2-inch 1 cup 1 cup packed light brown 1 large egg whites at room temperature at room temperature 30 whisk flour baking powder and salt in a large bowl with an electric mixer beat egg whites in large bowl until combined add egg whites until just combined add flour mixture and beat until just combined add egg whites to blend in a large bowl until pale
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1094s 464ms/step - loss: 2.6763
+7-inch springform pan on top of the cake sprinkle with confectioners' sugar and place in a large bowl beat together butter and sugar in a large bowl until smooth and smooth add cream cheese and vanilla in a large bowl until smooth and smooth add cream cheese and vanilla in a large bowl until smooth and smooth add cream cheese and vanilla in a large bowl until smooth and smooth add cream cheese and vanilla in a large bowl until smooth and smooth add cream cheese and vanilla in a large bowl until smooth and smooth add cream cheese and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1079s 457ms/step - loss: 2.6564
+shells and set aside for the cake until the dough is firm to the touch and the cake is golden and the cake is firm to a toothpick inserted into the center comes out clean about 10 minutes cool in the middle of the oven and preheat the oven to 350 degrees f 175 degrees c for a few minutes or the cake and the cake can be made 1 day ahead store tightly wrapped at room temperature for at least 1 hour and up to a few drops or hand the flour and the sugar in a medium bowl
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1098s 466ms/step - loss: 2.6475
+hull into the prepared and make the cake mix the butter and sugar in a large bowl with an electric mixer at medium-high speed until the mixture is just combined add the egg whites and beat until the mixture is smooth and smooth add the egg whites and beat until the mixture is smooth and smooth add the remaining egg whites and vanilla extract in a large bowl until light and fluffy about 3 minutes add the egg whites and vanilla extract in a large bowl until light and fluffy about 3 minutes add the egg whites and vanilla extract
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1089s 462ms/step - loss: 2.6360
+wet cake cake cake over hot syrup and next syrup over medium heat stirring constantly until chocolate is melted and tester inserted into center comes out clean about 30 minutes cool cakes in pan on rack to cool completely do ahead can be made 1 day ahead cover with foil and store at room temperature 30 1/2 cup 1 stick unsalted butter room 1 cup packed dark brown 1 cup packed dark brown 1 cup packed dark brown 1 cup packed dark brown 1 cup packed dark brown 1 cup packed dark brown 1 cup packed dark brown 1 cup
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1090s 462ms/step - loss: 2.6271
+nut-and-flour the cake pans and invert the cake onto a rack and cool completely remove the sides of the pan and invert the cake from the pan and invert the cake from the pan and invert the cake from the pan and invert the cake from the pan and invert the cake from the pan and invert the cake from the pan and invert the cake from the pan and invert the cake from the pan and invert the cake from the pan and invert the cake from the pan and invert the cake from the pan and invert the
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1079s 457ms/step - loss: 2.6160
+13x9-inch cake pan with a second cake bake for 35 to 40 minutes cool in pan on a rack and cool completely before serving dust with confectioners' sugar and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish with whipped cream and garnish
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1078s 457ms/step - loss: 2.6089
+style cover the cake in the center of the cake comes out clean let the cake cool in the pan and cool the cake in the frosting fills the cake and let it cool in the pan for 10 minutes before serving the cake in the pan and let it cool in the pan for 10 minutes before serving top with the remaining frosting and the cake mix the butter and salt in a medium bowl until it is smooth and smooth remove the heat and let it cool in the center of the oven and preheat the oven to
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1090s 462ms/step - loss: 2.6112
+238 and cook the cookies until the edges are the cake is the edges are the cake is golden brown and the cake is golden brown and the cake is golden and the edges are the cake is golden brown and the cake is golden and the edges are the cake is golden brown and the cake is golden brown and the cake is golden and the edges are the cake is golden brown and the cake is golden and the edges are the cake is golden brown and the cake is golden brown and the cake is golden and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1082s 458ms/step - loss: 2.5916
+prepared baking sheets spacing up to bake the cookies cool on a rack and let cool completely completely will be thin and cut into 2 cups apart bake cookies rotating pan halfway through until golden brown and centers are still warm about 20 minutes cool completely on a rack and let cool completely can be made 1 day ahead store airtight at room temperature for at least 1 1/2 cups all purpose 1 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1079s 458ms/step - loss: 2.5841
+ensuring down the top and side of the more water until smooth and smooth with a handheld spatula set the bowl with a rubber spatula to a depth of 1/2 inch thick and smooth the bowl should not touch water stirring until the mixture is smooth and smooth add the flour mixture and the remaining mixture until the mixture is smooth and smooth add the flour mixture and the remaining mixture until the mixture is smooth and smooth add the flour mixture and the remaining mixture until the mixture is smooth and smooth add the remaining flour and salt in
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1070s 454ms/step - loss: 2.5726
+peach oven to 350 degrees c line pans with paper towels and flour a little baking whisk flour baking powder and salt in a medium bowl until smooth about 1 minute add eggs 1 at a time beating well after each addition and beat until smooth about 2 minutes add eggs one at a time beating well after each addition and beat until combined add flour mixture and beat until smooth about 2 minutes add eggs one at a time beating well after each addition and beat until combined add flour mixture and beat until smooth about 2 minutes add
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1081s 458ms/step - loss: 2.5660
+bend into the bowl of the bowl and the chocolate in the bowl of the mixer and beat until smooth and smooth pour the batter into the prepared pan and smooth top with a thin layer of cake and pipe the frosting over the top of the cake and spread the frosting over top and sides of the cake and spread the frosting over top and sides of the cake and spread the frosting over top and sides of the cake and spread the frosting over top and sides of the cake and spread the frosting over top and sides
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1074s 455ms/step - loss: 2.5581
+pitted halved hulled brown softened to can finely grated lemon 1 teaspoon freshly grated lemon 1 1/2 teaspoons vanilla 1 1/2 cups all-purpose 1 teaspoon baking 1/2 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon freshly grated 1/4 teaspoon freshly grated lemon 1/4 teaspoon freshly grated lemon 1/4 teaspoon freshly grated lemon 1/4 teaspoon freshly grated lemon 1/4 teaspoon freshly grated lemon 1/4 teaspoon freshly grated lemon 1/4 teaspoon freshly grated lemon 1/4 teaspoon freshly grated lemon
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1082s 459ms/step - loss: 2.5490
+silicone baking mats are great for pull it when the dough comes out clean about 10 minutes in the freezer for a few bashes with your fingers to a sharp knife and a rolling pin roll out the dough into a ball of the dough and pipe the dough into a crescent to form the dough into a crescent to form the dough will be very fragile around the edge of the pan and roll the dough into the sheet of the dough and roll into a crescent to form the dough into a crescent to form the dough and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1079s 458ms/step - loss: 2.5400
+loeb's remaining 1/4 cup baking in a large bowl with an electric mixer beat butter and sugar in large bowl until light and fluffy about 3 minutes add eggs 1 at a time beating well after each addition beat in egg whites until just combined add flour mixture and beat until just combined add dry ingredients in a large bowl until smooth and smooth add flour mixture and beat until just combined add dry ingredients in a large bowl until smooth and smooth add flour mixture and beat until just combined add dry ingredients in a large bowl until smooth
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1083s 459ms/step - loss: 2.5317
+dots and cook until the dry to the mixture is the dough is firm to a toothpick inserted into the center comes out clean about 10 minutes in the middle of the oven and let the cookies cool in the pan for a few minutes for a few minutes or the cookies and let the cookies cool in the pan for a few minutes or the cookies for a few minutes for a few minutes or the cookies and let the cookies cool the cake in the pan for a few minutes for a few minutes or the cookies and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1086s 461ms/step - loss: 2.5229
+blanc until set about 30 minutes then remove pan and cool in pan on a wire rack and cool completely before ruffle a little aunt served cream cheese 1 cup all-purpose 1 teaspoon baking 1/2 teaspoon ground 1/2 teaspoon ground 1/2 teaspoon ground 1/2 teaspoon ground 1/2 teaspoon ground 1/2 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1089s 462ms/step - loss: 2.5173
+poured into the bowl of the remaining batter over the cake mix in the remaining egg and vanilla add the remaining 2 tablespoons sugar and vanilla in a large bowl with an electric mixer on high speed beat the cream cheese and vanilla beat until the mixture is smooth and smooth add the remaining egg whites and beat until smooth add the vanilla and vanilla add the flour mixture and beat until smooth add the remaining egg whites and beat until smooth add the vanilla and vanilla add the flour mixture and beat until smooth add the remaining egg whites
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1089s 462ms/step - loss: 2.5163
+screwdriver on low and low speed until the dough is just combined add the flour and salt in a large bowl until light and fluffy about 2 minutes add the flour mixture and mix until the mixture is smooth and smooth add the flour mixture and the remaining milk mixture until the mixture is just combined add the flour mixture and mix until the mixture is just combined add the flour mixture and mix until the mixture is just combined add the flour mixture and the remaining mixture until the mixture is just combined add the remaining flour and salt
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1094s 464ms/step - loss: 2.5017
+cherry-vanilla towel and chill until golden and golden brown about 20 minutes transfer to rack and cool completely can be made 1 day ahead cover with foil and store airtight at room temperature rewarm in freezer to facilitate stand and refrigerated rewarm in freezer until golden brown and crisp about 10 minutes cool on sheets 10 minutes transfer to rack and cool completely can be made 1 day ahead cover with foil and chill rewarm in freezer until golden brown and crisp about 10 minutes cool on sheets 10 minutes transfer to rack and cool completely can be made 1
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1082s 459ms/step - loss: 2.4919
+pickin' knife to 7 to cool cookies on sheets of parchment paper and cut around edge of pan to loosen cake can be made 1 day ahead cover with foil and store airtight at room temperature rewarm in center can be made 1 day ahead cover with foil and store airtight at room temperature rewarm in center can be made 1 day ahead cover with foil and store airtight at room temperature rewarm in center can be made 1 day ahead cover with foil and store airtight at room temperature rewarm in center can be made 1 day ahead cover
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1083s 459ms/step - loss: 2.4863
+unlined into the prepared and bake until the touch and a toothpick inserted into the center of the cake comes out clean allow to cool on the baking sheets before cutting the cake with the remaining frosting and the cake mix the remaining 1 cup butter and sugar in a bowl with an electric mixer at medium speed until the mixture is smooth and smooth the mixture is smooth and smooth the mixture should be very soft but not allow to cool in the pan and let it cool in the pan for 10 minutes before serving dust with confectioners'
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1088s 461ms/step - loss: 2.4809
+higher cake layer of cake then then spread on top of cake pan and invert cake onto rack cool cake in pan on rack remove pan sides of cake and invert cake onto rack cool cake in pan on rack 10 minutes run knife around sides of cake to loosen cake board cut side of pan with parchment paper and invert onto a rack and cool completely do ahead can be made 1 day ahead store in an airtight container at room temperature 30 1 cup 1 cup 1 cup 1 cup 1 cup 1 cup 1 cup 1 cup
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1083s 459ms/step - loss: 2.4707
+almond-flavored knife around the dough onto edge of cake and chill until firm about 1 hour before cutting around cake pan to loosen cake can be prepared cut into wedges and serve with whipped cream and 1 1/2 cups plus 1 tablespoon plus 1 tablespoon 1/2 cup 1 stick unsalted butter room 1 1/2 cups all-purpose flour plus more for 1 cup 1 cup plus 2 tablespoons 1 1/2 teaspoons baking 1/2 teaspoon 1 cup plus 1 tablespoon finely grated orange 1 cup sour 1 cup plus 1 tablespoon finely grated orange 1 teaspoon vanilla 1 cup plus 1 tablespoon
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1080s 458ms/step - loss: 2.4655
+samoas knife to firm ahead many in center and chill at least 2 hours can be made 1 day ahead cover with foil and store at room temperature rewarm in medium bowl until smooth about 1 minute transfer to a bowl until smooth about 10 minutes transfer to a bowl until set about 10 minutes transfer to a large bowl and chill until firm about 1 hour or until firm about 1 hour before serving freeze until firm about 1 hour before serving freeze until firm about 1 hour before serving freeze until firm about 1 hour before serving freeze
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1088s 461ms/step - loss: 2.4569
+why the cake with a second baking pan and bake for 1 hour and 10 minutes cool in the center of the oven and preheat to 350 degrees f and slice the cake into a 9 inch springform pan and invert the cake onto a wire rack and let cool completely before cutting out with a long serrated knife trim the edge of the cake to loosen the cake from the pan and invert the cake onto a wire rack to cool completely before serving dust with confectioners' sugar and place the cake in the refrigerator for a few minutes
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1076s 456ms/step - loss: 2.4542
+corner of the cake with the cake and the syrup and let it sit at room temperature until it is set about 30 minutes before removing to a platter and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and invert onto a plate and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1077s 456ms/step - loss: 2.4472
+soft—about knife to firm on cake plate and invert onto a rack and cool completely do ahead can be made 1 day ahead cover and chill rewarm in middle of oven until golden brown and tester inserted into center comes out clean about 1 hour cool on cake in pan on racks to cool completely do ahead can be made 1 day ahead cover with foil and store airtight at room temperature rewarm in single layer in pan on racks to cool completely do ahead can be made 1 day ahead cover with foil and store airtight at room temperature
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1071s 454ms/step - loss: 2.4300
+133 in the blueberries then pour into the prepared pan and bake for the cake to 350 degrees f 175 degrees c for 40 to 45 minutes or until a toothpick inserted into the center of the cake comes out clean allow to cool on a wire rack to cool completely before serving dust with confectioners' sugar and line a buttered cake pan with a large bowl set aside for a few minutes before serving dust with confectioners' sugar and 2 tablespoons of the cake in a large bowl cream together the cream cheese and sugar until light and fluffy
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1088s 461ms/step - loss: 2.4257
+*if on the sides of the surface and chill for at least 1 hour or until the center is golden and the cookies are the cake to a toothpick inserted into the center comes out clean about 10 minutes in the middle of the oven and let the cookies cool in the pan for 10 minutes before transferring to a wire rack to cool the cookies on the baking sheets for 10 minutes before transferring to a wire rack to cool the cookies on the baking sheets for 10 minutes before transferring to a wire rack to cool the cookies
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1082s 459ms/step - loss: 2.4184
+sugar/nut cake over cake and top of cake whisk together flour baking powder and salt in a medium bowl whisk together cream cheese and sugar in a large bowl cream together cream cheese and sugar in a large bowl until smooth add eggs and beat until smooth add eggs and vanilla beat until smooth and smooth add chocolate mixture to lighten then fold in remaining batter gently fold in remaining batter gently fold in remaining batter to lighten then fold in remaining batter into 3 additions beginning and ending with dry ingredients to lighten over medium heat and whisk until
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1081s 458ms/step - loss: 2.4200
+sealable preheat oven to 350 degrees f with rack in middle line 2 large baking sheets with parchment or butter in a large bowl with an electric mixer at medium speed until pale and fluffy about 3 minutes add eggs 1 at a time beating until combined well and beat in egg and vanilla until combined well fold in flour mixture into batter just until combined well fold in remaining batches into batter just to form a ball of dough to form reshape if necessary then sprinkle with remaining 2 tablespoons of a food processor and beat until smooth add
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1083s 459ms/step - loss: 2.4095
+weights on the cupcakes if a bit or for at least 1 preheat the oven to 350 degrees f and a little or or a silpat or wax paper or a lightly floured work surface and sprinkle with the remaining dough and roll them into the prepared baking sheets bake for 1 hour or until the tops are golden brown and the edges are golden brown and the edges are golden brown and the edges are golden brown and the edges are golden brown and the edges are golden brown and the edges are golden brown and the edges are
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1078s 457ms/step - loss: 2.3991
+110 in the blueberries add the mixture to the chocolate mixture in the bowl of the mixer and beat until the mixture is smooth and smooth add the egg yolks and vanilla until smooth add the egg and vanilla and beat until smooth add the egg and vanilla and beat until smooth add the egg yolks and vanilla until smooth add the egg and vanilla and beat until smooth add the egg and vanilla and beat until smooth add the egg yolks and the butter until the mixture is smooth and smooth add the egg yolks and the butter until
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1073s 455ms/step - loss: 2.3968
+scraps and re-roll repeat process 3–4 times to package apricots and 3–4 to whisk egg whites and salt in a large bowl until smooth and smooth about 2 minutes then transfer to a depth of 1 inch per side of a long serrated knife trim edges of each curl on a rimmed baking sheet and chill until firm about 1 hour before serving freeze to room temperature before storing salty doughnuts in plastic wrap in plastic wrap and chill until firm about 1 hour before serving freeze to room temperature before storing salty doughnuts in plastic wrap and chill until
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1073s 455ms/step - loss: 2.3863
+ounces/1 pipe 2 tablespoons about 2 inches apart across parchment to adhere cut out with a sharp knife cut dough into wedges and cut into 2 1/2-inch-wide log about 1 1/2 inches deep and chill until firm about 1 hour before cutting and cut into wedges and about 1 1/2 inches deep and chill until firm about 1 hour before cutting and cut into wedges and about 1 1/2 inches deep and chill until firm about 1 hour before serving freeze until firm about 1 hour before serving freeze until firm about 1 hour before serving freeze until firm about
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1088s 461ms/step - loss: 2.3814
+45-60 until well form or sure the leaves to the cake from the heat and let sit in the center of the chocolate and chocolate mixture over low heat stirring until smooth and spreadable stirring occasionally remove from heat and let cool for 15 minutes before removing to cool completely before serving chill for at least 1 hour before serving in the fridge for up to 1 day to advance and kept in an airtight container at room temperature for up to 1 day to advance and kept in an airtight container at room temperature for up to 1 day
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1087s 461ms/step - loss: 2.3739
+no-stir remaining 1/4 cup baking 2 tablespoons finely grated lemon 1 tablespoon finely grated lemon 1 tablespoon fresh lemon 1 tablespoon vanilla 1 cup bleached all-purpose 1/2 teaspoons baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon baking 1/2 teaspoon
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1083s 459ms/step - loss: 2.3658
+wavelike until the dry is light and the touch and the center is slightly cracked the pan and let it cool in the pan for 10 minutes then remove the sides of the oven and let the cake cool in the pan for 10 minutes before removing from the oven and replace the cake in the fridge for 30 minutes before removing from the pan for 10 minutes then remove the sides of the cake and place the cake on the cake place the cake on a serving plate and place the cake on the cake place the cake on
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1077s 457ms/step - loss: 2.3597
+1/16 sugar and cream until incorporated add the flour mixture and salt beat until smooth add the flour mixture and beat until smooth add the egg yolks and vanilla and beat until smooth add the egg yolks and vanilla and beat until smooth add the egg yolks and vanilla and beat until smooth add the egg yolks and vanilla and beat until smooth add the egg yolks and vanilla and beat until smooth add the egg yolks and vanilla and beat until smooth add the egg yolks and vanilla and beat until smooth add the egg yolks and vanilla and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1079s 457ms/step - loss: 2.3531
+powdered pans 1 minute bake until tester inserted into center comes out clean about 1 hour cool syrup in pan on rack 10 minutes run a knife around sides of cake to loosen cake pan cut side up on platter cut side up on top of cake pan spread remaining syrup over top of cake pan with remaining pan at least 10 minutes or until firm enough to spread easily over bottom of pan and spread with remaining syrup over top of cake bake at 350 degrees f butter and flour a 2-quart saucepan over medium heat until sugar dissolves
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1077s 456ms/step - loss: 2.3472
+himalayan knife around logs to cake cool on sheets of parchment paper and cut surface into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into wedges and cut into
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1075s 456ms/step - loss: 2.3418
+cheesecake's pipe the edge of the plate and pipe on the edge of the prepared sheet of parchment paper to cool completely on the tray for the cookies can be made ahead store in an airtight container at room temperature up to 1 week soften or freeze up to 1 day to soften on a rack for about 1 hour before storing in a small bowl until creamy about 2 minutes add the egg yolks and remaining 1 1/2 cups sugar in a large bowl with an electric mixer at medium speed until light and fluffy about 2 minutes add
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1082s 459ms/step - loss: 2.3395
+x hands and with five reduce oven to 1 to make a bowl until smooth add cream cheese and beat until smooth add flour mixture and beat until smooth add eggs and beat until smooth add eggs and beat until smooth add eggs and beat until smooth add eggs and beat until smooth add eggs and beat until smooth add eggs and beat until smooth add eggs and beat until smooth add eggs and beat until smooth add eggs and beat until smooth add eggs and beat until smooth add eggs and beat until smooth add eggs and beat until
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1087s 461ms/step - loss: 2.3241
+scalded cake of batter on a greased and bake until top is golden brown and tester inserted into center comes out clean about 50 minutes cool cake in pan on rack to cool completely do ahead can be made 1 day ahead cover with rack in center of oven and preheat to 350 degrees f 175 degrees c cake until set in center of a slow thermometer to center is set about 45 minutes cool cake in pan on rack to cool completely do ahead can be made 1 day ahead cover with rack in center of oven and preheat
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1094s 464ms/step - loss: 2.3260
+inward on low and beat the butter until smooth add the flour and salt and beat until smooth add the flour and salt and beat until the mixture is smooth and smooth add the flour and salt and beat until the mixture is smooth and smooth add the remaining sugar and vanilla and beat until the mixture is smooth and smooth add the remaining sugar and the remaining sugar until the mixture is smooth and smooth add the confectioners' sugar and vanilla in a medium bowl until smooth add the confectioners' sugar and vanilla and beat until smooth add the
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1086s 461ms/step - loss: 2.3164
+curry sugar and beat until smooth add the flour mixture and beat until smooth add the flour mixture and mix until well blended add the egg yolks and vanilla add the flour mixture and mix until well blended add the egg yolks and vanilla add the flour mixture and mix until the mixture is smooth and smooth add the flour mixture and mix until the mixture is smooth and smooth add the flour mixture and mix until the mixture is smooth and smooth add the flour mixture and mix until the mixture is smooth and smooth add the flour mixture
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1077s 457ms/step - loss: 2.3101
+toothpick inserted into the center of the cake comes out clean allow to 55 minutes in a large bowl beat together the butter and sugar together until light and fluffy beat in the eggs one at a time beating well after each addition beat in the vanilla extract and vanilla beat until smooth add the flour mixture and beat until smooth add the flour mixture and beat until smooth add the flour mixture and mix until blended add eggs one at a time beating well after each addition mix in the remaining flour mixture and vanilla beat until smooth add
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1083s 459ms/step - loss: 2.2974
+marshmallows on the cake out on a baking pan on the counter for 10 minutes before transferring to a wire rack and let the cake cool in the pan for 10 minutes then turn out onto a wire rack and let cool for at least 10 minutes for the nose and lower or spatula for 10 minutes or until the edges are golden brown and the cake springs back when the cake is light and the edges are golden brown and the cake springs back when lightly touched with the oven and let it cool in the pan for 10
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1090s 462ms/step - loss: 2.2972
+re-use down the remaining remaining mixture and just to the touch and the chocolate is melted and the the the cake to a toothpick inserted in the center comes out clean about 50 minutes cool the cake in the pan for a cooling rack for 10 minutes before removing the cake from the oven and let it cool completely in the pan for a few minutes for a few minutes let the cake cool on the cake remove the pan from the oven and let it cool completely in the pan for a few minutes for a few minutes let
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1091s 462ms/step - loss: 2.2915
+almond-flavored knife when pale cool on baking sheets and bake cookies until golden brown about 20 minutes cool completely on sheets of 32 minutes transfer to racks to cool completely transfer cookies to racks to cool completely transfer cookies to racks to cool completely transfer cookies to racks to cool completely transfer cookies to racks to cool completely transfer cookies to racks to cool completely transfer cookies to racks to cool completely transfer cookies to racks to cool completely transfer cookies to racks to cool completely transfer cookies to racks to cool completely transfer cookies to racks to cool completely
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1089s 462ms/step - loss: 2.2829
+england cake with offset spatula spread with chocolate and butter in a single layer on a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a serving plate and invert onto a
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1090s 462ms/step - loss: 2.2781
+7/8 golden brown 12 more in a racks and line baking with a 3-inch metal spatula to overhang in the center of the oven and let the cookies cool in the pan on a tray until the edges are firm about 1 hour before storing in a bowl until it is set about 10 minutes then transfer the cookies to a wire rack and let cool completely on a tray until the edges are firm and top is set about 1 hour and up to 1 1/2 hours in the center of the cake layer on top and sides of
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1083s 459ms/step - loss: 2.2710
+mile-high graham cookies 8 weeks mascarpone or 2 days chocolate and 1 cup unsalted butter 1 cup plus 2 tablespoons unsalted butter melted chocolate 1 cup all-purpose 1 teaspoon baking 1/2 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1096s 465ms/step - loss: 2.2645
+glossy and the sides of the bowl feel dry comes out clean watch set off the marshmallow creme is melted and smooth the melted chocolate and let it cool in the center of the oven and immediately spread the frosting over the top of the cake starting at a point cake can be made 1 day ahead store airtight at room marshmallow creme with marshmallow marshmallow cream and natural marshmallow breakfast marshmallow 1 cup marshmallow cream or whipping 1 cup chopped candied orange juice plus extra for 125g 1/2 cup marshmallow paste or marshmallow cream as desired marshmallow is ready
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1088s 461ms/step - loss: 2.2593
+teacups in the blueberries add the nuts and the chocolate over the chocolate mixture and let it cool in the pan for a few minutes to the touch and a toothpick inserted into the center of the cake comes out clean remove the cake from the cake and invert the cake onto a wire rack and let cake cool in the pan for a few minutes before removing to a wire rack to cool completely before turning you can be made 1 day ahead store in an airtight container at room temperature for up to 3 months before serving dust
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1091s 463ms/step - loss: 2.2503
+they’ve ball of ready just with the dough stand at a wooden pick or toothpick inserted in the center comes out clean cool completely in the freezer for about 1 hour before cutting into 2 pieces and place the dough on a sheet of wax paper in the freezer wrap at least 1 hour and up to 1 week cold water to make the dough will be very soft you should need to roll out the dough to make the dough and refrigerate until firm about 1 hour up to 1 week soften cookies can be baked 1 week ahead
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1092s 463ms/step - loss: 2.2488
+syrup for serving let cake cool in pan on a rack to cool completely do ahead can be made 1 day ahead cover and keep coconut cake can be made 1 day ahead cover and keep at room temperature up to 3 tablespoons grand marnier or plastic wrap or spider in large bowl until smooth whisk in sugar and vanilla and beat until smooth add sugar and vanilla and beat until smooth add sugar and vanilla and beat until smooth add sugar and vanilla and beat until smooth add sugar and vanilla and beat until smooth add sugar and vanilla
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1091s 462ms/step - loss: 2.2453
+walnut paste not marzipan 3/4 cups 1 large egg room 1 large 1 teaspoon pure vanilla 1 cup heavy whipping 1 cup sweetened flaked coconut for 1 cup heavy whipping 1 cup sweetened flaked coconut such as bartlett or plastic wrap and chill until firm at least 2 position a rack in center of oven and preheat to 350 degrees f line 2 large rimmed baking sheets with parchment paper whisk flour baking powder and salt in a medium bowl whisk together flour and salt in a medium bowl until smooth add butter and vanilla and beat until smooth add
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1083s 459ms/step - loss: 2.2445
+puerto for 30 preheat the to 350 degrees f line a large baking sheet with a 9-inch springform pan with nonstick spray line the bottoms with parchment paper and dust with confectioners' sugar and line a large baking sheet with parchment paper and line with a round of parchment paper and line with a round of parchment paper and line with a round of parchment paper and line with a round of parchment paper and line with a round of parchment paper and line with a round of parchment paper and line with a round of parchment paper and line
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1090s 462ms/step - loss: 2.2320
+according and set are dry peaks beat the sugar and sugar in a large bowl with an electric mixer at high speed until light and fluffy about 2 minutes add the eggs and vanilla and beat until smooth and smooth add the flour mixture and beat until smooth and smooth add the remaining egg and vanilla and beat until smooth add the flour mixture and the remaining milk and the remaining 1/2 cup sugar until the mixture is smooth and smooth add the remaining 2 tablespoons of the flour mixture and the remaining mixture until the mixture is smooth and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1084s 460ms/step - loss: 2.2321
+coloring until it reaches the color to use force tablespoon of with a offset spatula spread half of the remaining buttercream on a rimmed baking sheet and bake for 20–25 minutes rotating the sheets halfway through until the cookies are golden and a tester inserted into the center comes out clean cool on the cake letting the sides of the cake and invert onto a wire rack and let cake cool in the pan on a wire rack to a rack and let it cool completely on the counter for a few minutes before serving on the ones for a
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1087s 461ms/step - loss: 2.2182
+thickness using floured angel-shaped cookie cutter cut out cookies gather dough scraps and reroll to make cookies do ahead can be made 1 week ahead store airtight at room temperature in airtight containers at room temperature in airtight containers at room temperature do ahead can be made 1 week ahead store airtight at room temperature in airtight containers at room temperature in airtight containers at room temperature up to 3 dozen cookies if loose sticky each log will be soft and sandwich between cookies and transfer to a baking sheet spacing 1 inch apart repeat with remaining dough and chill
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1082s 459ms/step - loss: 2.2113
+tarte knife and blueberry in same manner to loosen cake pan and cool completely on a rack for 15 minutes then transfer to a rack and let cool completely on a rack for 15 minutes then transfer to a rack and let cool completely on a rack for 15 minutes then transfer to a rack and let cool completely on a rack for 15 minutes then transfer to a rack and let cool completely on a rack for 15 minutes then transfer to a rack and let cool completely on a rack for 15 minutes then transfer to a rack
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1085s 460ms/step - loss: 2.2088
+shaved the cake with a hand bowl of the whisk together the flour baking powder and salt in a large bowl until smooth and smooth add the flour mixture and the remaining 1/2 cup sugar in a large bowl until light and fluffy about 3 minutes add the eggs one at a time beating well after each addition and beat on medium speed until it is smooth and smooth add the flour mixture and the remaining 3 tablespoons of the flour mixture to a large bowl with an electric mixer on high speed beat the butter and sugar until light
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1048s 444ms/step - loss: 2.1986
+four often form the first of the cups with the the filling should be a small ball and press the dough into the cupcake tins and scatter the remaining cookies evenly over the top of the dough to form the dough to form the cookies refrigerate the cupcakes can be made 1 week ahead store airtight at room temperature for at least 1 1/2 cups all-purpose 1/2 teaspoon kosher salt plus 1 tablespoon 1/2 teaspoon pure vanilla 1 1/2 cups all-purpose 1 teaspoon baking 1/2 teaspoon 1 1/2 cups 1 1/2 sticks unsalted butter room temperature plus more for 1
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1057s 448ms/step - loss: 2.1914
+egg-fat 10 minutes in the package and until it together back together and add the eggs one at a time beating well after each addition add the vanilla and beat until smooth add the egg yolks and vanilla beat until the mixture is incorporated and the consistency of the mixture will be stiff but not liquefied consistency about 2 1/2 cups frosting over the top of the cake and place the cake on top of the cake place the cake on top of the cake place the cake on top of the cake place the cake on top of the
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1061s 450ms/step - loss: 2.1913
+diagonal cake layer side with repeat with 2 inches apart on top and spread remaining 1 to 2 inches cake in a single layer on top of cake case spread top with the remaining frosting over top of cake and spread with 1 cup frosting to a spoon to spread top with the cake case spread the frosting over top and sides of cake top with remaining cake layer spread remaining frosting over top and sides of cake top with remaining cake layer spread remaining frosting over top and sides of cake top with remaining cake layer spread remaining frosting
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1053s 446ms/step - loss: 2.1922
+2-inch-wide pipe 3 tablespoons about 1 1/2 inches apart on a 1/2-inch border and a ruler inch bake until golden brown and firm about 1 hour or until edges are firm about 1 hour or until firm about 1 hour or freeze until firm about 1 hour or freeze until firm about 1 hour or freeze until firm about 1 hour or freeze until firm about 1 hour or freeze until firm about 1 hour or freeze until firm about 1 hour or freeze until firm about 1 hour or freeze until firm about 1 hour or freeze until firm
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1044s 443ms/step - loss: 2.1834
+quaker pipe 2 1 1/2 pounds of sliced to 1 cup plus 1 1/2 cups plus 1 1/2 cups plus 2 tablespoons granulated 1 teaspoon vanilla 1 1/2 cups whole 1 1/2 cups all-purpose 1 teaspoon baking 1/2 teaspoon 1 cup plus 2 tablespoons granulated 1 teaspoon vanilla 1 teaspoon vanilla 1 cup whole 1 1/2 teaspoons finely grated lemon 1 1/2 cups chilled heavy whipping 1 cup plus 2 tablespoons granulated 1 teaspoon baking 1/2 teaspoon kosher 1 cup whole 1 teaspoon vanilla 1 cup whole 1 1/2 teaspoons finely grated lemon 1 teaspoon vanilla 1 cup whole 1
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1044s 443ms/step - loss: 2.1797
+softened butter and dredge the inside with sugar blend flour the butter and sugar in a small saucepan over low heat stirring until it is dissolved and melt the chocolate in a small saucepan over simmering water until it is melted and smooth remove from the heat melt the butter in a small saucepan over simmering water until it is melted and the bottom of the bowl should not touch water stirring constantly until the mixture is melted and the bottom of the bowl should not touch water stirring constantly until the mixture is light and fluffy about 5 minutes
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1048s 444ms/step - loss: 2.1738
+strawberry 1/2 cup 2 1/2 cups all-purpose 1 teaspoon baking 1/2 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/2 cup 1 stick unsalted butter room 1 cup packed light brown 1 cup 1 cup 1 cup 1 teaspoon vanilla 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 teaspoon vanilla 1 cup sour 1 cup sour 1 cup sour
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1048s 444ms/step - loss: 2.1635
+two-piece cake add cake with the buttermilk and process well pour into prepared pan smooth top with the remaining glaze set aside to cool for 10 minutes before removing from the cake from the pan place the cake on top of the cake place on a serving platter and place the cake on top of the cake place on the cake place on a serving platter and place the cake on the cake place on a platter place the cake on top of the cake place on the cake place on a serving platter and place the cake on the
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1044s 443ms/step - loss: 2.1617
+embers and chill at least 30 minutes on the cake for 20 minutes before turning the cake in a saucepan and set over a bowl or a stand mixer fitted with the paddle attachment beat on high speed until it is smooth and smooth add the egg yolks and vanilla extract in a large bowl until it is smooth and smooth add the flour mixture and salt until the mixture is smooth and smooth add the flour mixture and the remaining salt until the mixture is smooth and smooth the mixture will be very thick and transfer it to a
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1050s 445ms/step - loss: 2.1592
+slivered almonds toasted about 4 1/2 cup firmly packed golden brown 1 teaspoon finely chopped bittersweet chocolate do not exceed 61% cacao broken into 1/2-inch cubes and candy blend sugar and mix in processor until nuts are broken around dough is pale crust is firm about 1 hour or until golden brown about 15 minutes cool completely in pan on rack maintain oven beat butter and sugar in large bowl until smooth add sugar and beat until well blended add eggs 1 at a time beating well after each addition mix in flour mixture in 3 additions alternately with sour
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1045s 443ms/step - loss: 2.1473
+vigilant and chill at least 3 minutes in a medium saucepan over medium heat until it is reduced to 10 more total if skins are not set about 5 minutes remove from heat and let cool on a wire rack to room temperature before serving dust with powdered sugar and 2 tablespoons unsalted butter room temperature plus more for 1 cup 1 large egg 1 1/2 cups all-purpose 1 teaspoon baking 1/2 teaspoon 1 cup unsalted butter room 1 cup packed light brown 1 large egg 1 1/2 cups granulated 1 teaspoon vanilla 1 teaspoon vanilla 1 cup whole 1
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1055s 447ms/step - loss: 2.1422
+also of the cake do not bake until cake is golden brown and a tester inserted into the center comes out clean about 1 hour and let cool on a rack for 15 minutes then transfer to a wire rack and let cool completely do ahead can be made 1 day ahead cover and let stand at room temperature before serving dust the cake with whipped cream and candied orange majestic and well in a large bowl with an electric mixer at high speed until light and fluffy about 3 minutes add the egg yolks and vanilla and beat until
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1055s 447ms/step - loss: 2.1380
+200g until well form or the crumbs in the cake mix in the chocolate and water to the center of the cake into the center of the cake and let sit for 45 minutes or until the cake is set about 30 remove the cake from the pan and place the cake on top of the cake place on the cake place on the pan on a wire rack to cool completely before storing the cake can be made 1 day ahead store in an airtight container at room temperature up to 1 day the cake will keep up to
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1057s 448ms/step - loss: 2.1325
+spider and cook until just set about 15 minutes let cool on a rack for 10 minutes then transfer to a wire rack and let cool completely in pan on a rack for 10 minutes then transfer to a wire rack and let cool completely in pan on a rack for 10 minutes then transfer to a wire rack and let cool completely in pan on a rack for 10 minutes then transfer to a wire rack and let cool completely in pan on a rack for 10 minutes then transfer to a wire rack and let cool completely in
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1063s 451ms/step - loss: 2.1322
+american and set on the tops set the flour cooking 1 1/2 cups the remaining the egg whites the sugar and the remaining the egg mixture to the ground mixture in the bowl of the mixer and beat until the mixture is smooth and smooth add the egg yolks and the remaining sugar and salt until the mixture is smooth and smooth the mixture should be thick and the icing is completely combined add the remaining egg and the remaining sugar and the remaining sugar until the mixture is smooth and smooth the mixture should be thick and the icing
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1080s 458ms/step - loss: 2.1293
+180 in medium from saucepan add sugar heat and cream in medium bowl until smooth and smooth remove from heat stirring often remove from heat and stir in chocolate and remaining 1/4 cup sugar in a small saucepan over medium heat stirring until chocolate is melted and spreadable about 10 minutes remove from cake layer and invert onto rack and cool completely do ahead can be made 1 day ahead cover with cake dome and keep at room temperature up to 3 hours and serve with whipped cream and chopped chocolate in a small bowl set over a saucepan of
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1071s 454ms/step - loss: 2.1201
+vigilant and chill at least 30 minutes on the rack for 10 minutes then transfer the cake out on the baking sheet and invert onto a serving plate and let them cool completely in the pan for 10 minutes then remove the sides of the cake and set aside then invert onto a wire rack and let cool for at least 10 minutes before serving dust the top with the remaining 2 tablespoons sugar and set in a medium bowl whisk together the butter and sugar in a large bowl until light and fluffy about 3 minutes add the egg
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1071s 454ms/step - loss: 2.1354
+110 in the blueberries on the prepared bake until the cake is set about 10 minutes remove the cake from the oven and let cool completely then remove the cake from the oven and let it cool completely in the pan for a few minutes before removing the cake from the oven and let it cool completely in the pan for a few minutes to the cake is done around the cake comes out clean cool cake in the pan for 10 minutes then remove the cake from the oven and let it cool completely in the pan for a
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1068s 453ms/step - loss: 2.1093
+tubs for 30 for 1 hour then up to a rack for a cake cool completely in the pan and invert the cake to loosen seam side down to a serving plate and dust with confectioners sugar and wrap in a large bowl or whisk together the flour baking powder and salt set in a large bowl with an electric mixer at medium speed until the consistency of the mixture is smooth and smooth add the flour mixture and mix until the mixture is smooth and smooth pour the batter into the prepared pan and bake for 40 to 45
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1073s 455ms/step - loss: 2.0997
+full—you on the prepared sheet and make the cookie cookie cookie bake for the best extra chocolate in the bowl of a standing mixer fitted with the whisk attachment beat the egg whites until light and fluffy about 2 minutes add the egg and vanilla and beat until the mixture is smooth and smooth add the egg and vanilla and beat until the mixture is smooth and smooth add the egg whites and salt and beat until the mixture is smooth and smooth add the egg whites and salt and beat until the mixture is incorporated and smooth the mixture
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1088s 461ms/step - loss: 2.0982
+m&m down over the sides of the dry and texture are the edges are the center is golden and the center is golden and the texture is melted and the bottom of the bowl feel the edges are runny of the mixture should come out and the icing is set about 10 minutes let cool completely let the cookies cool on a wire rack for about 10 minutes before removing from the ice cream for about 1 hour or until the edges of the cake is set about 1 hour depending on the racks in the middle of the oven
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1135s 481ms/step - loss: 2.0944
+difference a large well-floured surface or your smaller towel and bake for 50 to 50 minutes or until a toothpick inserted into the center of the cake comes out clean about 1 hour and until the cake is set about 30 minutes before removing from the pan and invert the cake onto a wire rack and let cake cool completely on a wire rack for at least 1 hour and up to a day before cake can be baked and glazed 2 days ahead store tightly wrapped at room temperature for at least 1 1/2 cups plus 1 tbsp plus
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1071s 454ms/step - loss: 2.0884
+seams are set drain center is bit of white chocolate let cool cool completely in the fridge for 30 minutes or overnight do ahead can be made 1 day ahead store airtight at room temperature for 1 cup all-purpose 1 cup chopped unsalted butter 1 cup packed dark brown 1 cup all-purpose flour plus extra for 1 cup chopped unsalted butter 1 cup packed dark brown 1 cup packed dark brown 1 cup packed dark brown 1 cup chopped 1 cup chopped 1 cup chopped 1 cup chopped preheat oven to 350 degrees f lightly grease a large baking sheet
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1075s 456ms/step - loss: 2.0887
+one-sixth of the cake so the cake peaks line a baking sheet of parchment paper in the bowl of a stand mixer fitted with the paddle attachment beat together the butter and sugar until light and fluffy add the egg yolks and vanilla and beat until the mixture is smooth and smooth add the remaining egg yolks and vanilla and beat until the mixture is smooth and smooth add the remaining egg whites and beat until everything is smooth and frothy about 2 minutes add the remaining 2 tablespoons sugar and vanilla and beat until everything is smooth and smooth
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1069s 453ms/step - loss: 2.0856
+flesh-colored into the prepared and the the cake the the cake the butter the cornstarch and a pinch of salt set a large bowl with an electric mixer on high speed beat the cream cheese and vanilla until light and fluffy add the eggs one at a time beating well after each addition and beat in the vanilla and vanilla add the flour mixture and the remaining milk and the remaining milk and the cream cheese until the mixture is smooth and smooth add the remaining egg whites and beat until smooth and smooth add the remaining egg whites and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1074s 455ms/step - loss: 2.0757
+molly's 10 minutes in the package and sprinkle over the prepared pan smooth bake for 15 to 35 minutes or until a toothpick inserted into the center of the cake comes out clean allow to cool on the baking sheets for 10 minutes before removing to a wire rack to cool completely before removing the sides of the cake place the cream cheese and butter in a large bowl cream together the butter and sugar until light and fluffy beat in the egg yolks one at a time beating well after each addition and beat in the confectioner's sugar and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1074s 455ms/step - loss: 2.0652
+9-by-2- of the amaretto pinch cut with a removable bottom or a butter pan and line the bottom with a round of the parchment paper or a 9-inch springform pan with a 9-inch round cake pan with a 9-inch round cake pan with a 9-inch round cake pan with a 9-inch round cake pan with a 9-inch round cake pan with a 9-inch cake pan with a 9-inch cake or a sharp knife and put the cake in a large bowl whisk together the butter and sugar until light and fluffy add the egg and the butter and the zest
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1076s 456ms/step - loss: 2.0617
+9x5 of the mixing the whites to the remaining coloring mixture the mixture into the cake until the mixture is smooth and smooth add the remaining whites and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and the remaining milk and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1086s 460ms/step - loss: 2.0609
+holes in a bowl melt the flour in a food processor until doubled in bulk about 2 minutes remove from the oven and let cool completely refrigerate until firm at least 1 preheat oven to 350 degrees f 175 degrees c grease and flour a 5x9-inch metal stir together the flour baking powder and salt in a large bowl stir together the cream cheese and sugar until light and fluffy beat in the egg white and vanilla stir in the remaining egg white mixture pour batter into the prepared pan and bake until the cake inserted into the center comes
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1070s 454ms/step - loss: 2.0533
+slurry on the sides of the plate wrap the the cookies with the cake with the remaining the other the cake for the the baking sheets for a few minutes before removing the dough from the refrigerator and slice the cake into the prepared baking sheets and bake for the best extra cookies if you could or the cake slice the cake with the remaining 2 tablespoons of the green breakfast 1 1/2 cups all-purpose 1 teaspoon baking 1/2 teaspoon ground 1/2 teaspoon ground 1/2 teaspoon ground 1/2 teaspoon ground 1/2 teaspoon ground 1/2 teaspoon ground 1/2 teaspoon ground 1/2
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1079s 457ms/step - loss: 2.0527
+marnier mixture is blended about 3 minutes then add the bowl of the whisk in the remaining 2 tablespoons sugar and beat until the mixture is smooth and smooth about 1 minute add the coconut and continue to beat until the mixture is just combined add the remaining egg and vanilla and beat until incorporated add the egg and vanilla and beat until incorporated add the egg and vanilla and beat until incorporated add the egg and vanilla and beat until incorporated add the egg and vanilla and beat until incorporated add the egg and vanilla and beat until incorporated
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1078s 457ms/step - loss: 2.0484
+settled mixture the apples and reduce speed to low and add the flour mixture and the remaining at a time beating well after each addition and beat on high speed until it holds stiff peaks fold one third of the whites into the cake mix in the remaining egg whites at a time beating well after each addition and beat on high speed until it holds stiff peaks fold one third of the whites into the cake mix in the remaining egg whites at a time beating well after each addition and beat on high speed until it holds stiff
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1085s 460ms/step - loss: 2.0439
+fragrance mixture is form billowy pancake doesn't coat then transfer to a wire rack to cool completely do ahead can be made 1 day ahead cover with a work surface and let it come to room temperature before serving spread remaining chocolate half of the chocolate mixture over top of the cake and place on a rimmed baking sheet and chill until firm at least 1 hour or up to room temperature can be made 1 day ahead cover with a work surface and let it come to room temperature before serving chill at least 1 hour or up to
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1086s 460ms/step - loss: 2.0425
+additions—the cake cover cake with a center of each pan with parchment paper cut side down on top of cake using a serrated knife cut each wedge horizontally in half horizontally place 2 cups cake with remaining cake layer cut side up on top of cake bake cake until golden brown around edges about 1 hour cool cake in pan on rack to cool completely do ahead can be made 1 day ahead cover with cake dome and keep chilled rewarm in freezer to soften chocolate cake in six large cake stand wrapped in plastic wrap until firm at least
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1075s 456ms/step - loss: 2.0343
+aquavit balls and cutting off the remaining end lining with ground with sugar and cinnamon and in a medium bowl set over a saucepan of simmering water and stir in the remaining egg white and sugar until smooth and smooth set aside to wire touch and dip a tiny bit of the cookies into the center of the cake and pipe the filling onto the prepared cookie sheets and bake for 30–35 minutes or until a toothpick inserted into the center of the edges and allow to cool completely before removing from the end of a hole or bottom of
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1060s 450ms/step - loss: 2.0335
+containers...they pipe the cake pop invert on a plate and place on top of meringue pipe with plastic wrap and chill until firm about 30 minutes transfer to a rack to cool completely before stacking or storing to a cutting board cut into squares and place on a diagonal cream together the remaining meringue and replace the second butter and remaining meringue with a pastry bag fitted with a small offset spatula or a small plate and pipe with a thin layer of meringue pipe 1 cup frosting on top of each pipe with a thin layer of meringue pipe
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1074s 455ms/step - loss: 2.0260
+8-by-3 ball of knead almost beater sugar to a add egg salt and vanilla until light dough holds soft dough before dough with plastic wrap and chill until firm at least 2 hours and up to a week oven to soften the logs on sheets of dough about 10 inch thick dough from wax paper and flatten into the dough roll out dough on a lightly floured surface and knead dough to form the dough disk from the dough is flattened rectangle with a sharp knife cut out into 1/4-inch-thick slices and cut the dough into 1/4-inch-thick slices and cut
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1084s 459ms/step - loss: 2.0179
+gather velvet cookies over spread over a single forming 8-inch cookie cookie pan and place the cookie in a small metal bowl over the bottom of the bowl and let sit for 30–35 minutes or until golden allow the cheesecake to darken and center pulling away from sides of pan and allow to cool completely can be baked 1 day ahead store airtight at room temperature in an airtight container at room temperature up to overnight can be made 1 day ahead store airtight at room temperature in an airtight container at room temperature up to overnight can be made
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1080s 458ms/step - loss: 2.0135
+saltiness cream and butter in the mixture and mix until the mixture is light and fluffy about 5 minutes add the egg yolks one at a time beating well after each addition and beat in the vanilla and sugar until incorporated scrape down the sides and bottom of the bowl and beat in the egg whites and vanilla and beat until the mixture is just combined fold in the remaining egg whites and the remaining sugar until the mixture is just combined fold in the remaining egg whites and the remaining sugar until the mixture is just combined fold in
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1051s 446ms/step - loss: 2.0124
+114 cake cut into 1 preheat the oven to 350 degrees line the pan with a 9-inch cake pan with nonstick spray line the bottom of the parchment paper in the bowl of a stand mixer fitted with the paddle attachment beat the butter and sugar in a large bowl until frothy about 2 minutes add the egg yolks and beat until the mixture is light and fluffy about 3 minutes add the egg yolks and beat until the mixture is smooth and frothy about 3 minutes add the egg and the zests to the and lemon zest and beat
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1054s 447ms/step - loss: 2.0153
+65 and sugar in a saucepan and add vanilla oil and sugar in another bowl of a stand mixer fitted with a whisk attachment beat egg whites in another large bowl until smooth and smooth add dry ingredients in a large bowl until smooth and smooth add melted chocolate and cook over medium-low heat until sugar dissolves increase heat to medium-low and simmer stirring occasionally until thickened about 5 minutes remove from heat and stir in remaining 1 cup sugar and 1 tbsp water in a medium saucepan over medium heat stirring until sugar dissolves increase heat to medium-low and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1041s 441ms/step - loss: 2.0094
+mackinnon's pipe 2 1 1/4 inches apart on parchment-lined baking sheet using even using an airtight container at room temperature or will keep up to serving crumble and chill until firm about 1 hour before serving with lemon slices with remaining 1 cup plus 2 tablespoons 1 stick unsalted butter cut into 1/2-inch cubes room 1 1/2 cups all-purpose 2 teaspoons baking 1/2 teaspoon 1 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1080s 458ms/step - loss: 1.9975
+wedge on low and beat the sugar and salt until light and fluffy add the egg and vanilla and beat until the mixture is light and fluffy about 2 minutes add the egg yolks one at a time beating well after each addition and beat on medium until smooth and smooth add the flour mixture and the remaining flour and baking soda in a bowl until smooth and smooth with a rubber spatula or the dough will be added to the ground bake for 60 to 70 minutes or until a toothpick inserted into the center of the cake comes
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1057s 448ms/step - loss: 2.0576
+meyer balls third and a 10 or 10 king 16 ounces blackberries chocolate 1 cup all-purpose 1 teaspoon baking 1/2 teaspoon kosher 1 1/2 cups all-purpose 1 teaspoon baking 1/2 teaspoon kosher 1 1/2 cups semisweet chocolate 1/2 cup granulated 1 tablespoon baking 1 teaspoon vanilla 1 teaspoon kosher 1 1/2 cups semisweet chocolate 1/2 cup all-purpose 1 tablespoon baking 1 teaspoon kosher 1 teaspoon baking 1/2 teaspoon kosher 1 cup semisweet chocolate 1/2 cup granulated 1 tablespoon pure vanilla 1 cup all-purpose 1 teaspoon baking 1/2 teaspoon kosher 1 1/2 cups semisweet chocolate 1/2 cup all-purpose 1 tablespoon baking
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1058s 448ms/step - loss: 1.9909
+lee's creamy 1 at room 2 cup firmly a food 1 cup 1 cup chopped preheat oven to 350 degrees f butter bundt pan and line with paper paper bundt pan and line bottom with a round of parchment paper beat together butter and sugar in a large bowl with an electric mixer at medium speed until light and fluffy about 5 minutes add eggs one at a time beating well after each addition and beat in eggs one at a time beating well after each addition and beat in eggs one at a time beating well after each addition
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1049s 445ms/step - loss: 1.9970
+equal-size ball of well pat into the first five minutes attach bowl of the water with the microwave for 30 minutes until golden about 10 seconds longer on a wire racks to cool completely cookies can be baked and 2 days ahead store airtight at room molasses cookies with the gluten-free molasses whole wheat 1 teaspoon baking 1/2 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4 teaspoon ground 1/4
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1047s 444ms/step - loss: 1.9789
+roll-ups in the blueberries then fry on the cake pan on the counter for 30 minutes before the cake completely in the pan for a few minutes before removing the cake from the pan for a few minutes then run a thin knife around the edge of the pan and invert the cake from the pan then invert the cake from the pan and invert the cake from the pan then invert the cake onto a serving plate and then remove the cake from the pan and invert the cake from the pan then invert the cake onto a serving
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1056s 448ms/step - loss: 1.9735
+water then cool to beat yolks salt and salt in a large bowl with an electric mixer at high speed until pale and fluffy about 3 minutes then add eggs 1 at a time beating well after each addition then beat in vanilla extract and salt until just combined then fold in remaining whites gently but thoroughly then fold in remaining 1/4 cup sugar and remaining 1 tablespoon at a time then fold in remaining 1 tablespoon almond extract then spread evenly over top with a pastry bag fitted with a 1/2-inch tip spread half of batter into a pastry
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1055s 447ms/step - loss: 1.9784
+bagged cake mix until to coat if crumbs and bake until a wooden pick or skewer inserted in center comes out clean about 1 hour cool cake in pan on a rack until golden brown about 40 minutes cool cake in pan on a rack until golden brown about 40 minutes cool cake in pan on a rack until golden brown about 40 minutes cool cake in pan on a rack until golden brown about 40 minutes cool cake in pan on a rack until golden brown about 40 minutes cool cake in pan on a rack until golden brown
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1034s 438ms/step - loss: 1.9707
+fragrantly knife to blueberry cookies on cake place cake pans on a rack 10 minutes run knife around pan sides to loosen cake cool and invert cake onto rack and cool completely do ahead can be made 1 day ahead cover and keep chilled chilled replace with nonstick vegetable oil 1 cup all-purpose flour plus more for 1 cup whole 1 cup plus 2 tablespoons 1 stick unsalted butter room 1 1/2 cups granulated 1 large egg 1 1/2 teaspoons baking 1/2 teaspoon 1 cup 2 sticks unsalted butter room 1 large egg room 1 large egg 1 1/2 cups
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1034s 438ms/step - loss: 1.9685
+in a large bowl beat butter and shortening together until smooth beat in eggs and vanilla mix until smooth and smooth pour batter into prepared bake at 375 degrees f 190 degrees c for 45 minutes or until a toothpick inserted into the center of the cake comes out clean allow to cool on baking sheet for 10 minutes before removing to loosen the cake from a serving plate dust with confectioners' sugar and garnish with 1 cup all-purpose 1 teaspoon baking 1/2 teaspoon 1 cup butter 1 cup white 2 1 teaspoon vanilla 1 cup all-purpose 1 teaspoon baking
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1043s 442ms/step - loss: 1.9610
+*available or frozen whipped 1 white 1 tablespoon cream plus more for 1 cup 1 cup packed light brown 1 cup 1 teaspoon baking 1/2 teaspoon baking 1/4 teaspoon 1 cup semisweet chocolate preheat oven to 350 degrees f butter and flour 13x9x2-inch baking pan sift together flour baking soda and salt in a large bowl cream butter and sugar in a large bowl until light and fluffy about 5 minutes add eggs one at a time beating well after each addition mix in flour mixture and mix until just combined fold in flour mixture and mix just until blended
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1044s 443ms/step - loss: 1.9606
+vegetable-oil cookie ounces dark corn 2 1/4 sticks unsalted butter room 1 large egg heat the oven for a rack for the baking sheet at room temperature for the base butter see level 1/4 teaspoon baking 1/2 teaspoon kosher 1 1/2 cups granulated 1 cup granulated 1 tablespoon pure vanilla 1 cup plain whole-milk 1 tablespoon vanilla or fresh lemon 1 cup plus 2 tablespoons granulated 1 teaspoon baking 1/2 teaspoon kosher 1 1/2 cups granulated 1 large egg 1 1/2 cups granulated 1 large egg 1 1/2 cups granulated 1 teaspoon vanilla 1 cup plain whole-milk 1 tablespoon pure
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1044s 443ms/step - loss: 1.9493
+confections and chill at least 15 minutes on the counter for 10 minutes then remove the pan and let it stand at room temperature until the tops are golden and a tester comes out clean about 25 minutes cool on a wire rack for 10 minutes then transfer to a wire rack and let cool on the baking sheet for 10 minutes then lift out from the pan and invert the cake from the pan and invert the pan in the pan and invert the pan in the pan and invert the pan in the pan and invert the pan
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1051s 446ms/step - loss: 1.9505
+reassemble in a of saucepan over low heat stirring until it is dissolved in the center of the oven and immediately remove from the glaze from the oven and let it cool completely in the pan for a few minutes before serving dust the chocolate with chocolate and 1 cup chopped for 1 preheat the oven to 350 degrees f 175 degrees c for a few chocolate and 110 degrees in a large bowl cream together the butter and sugar until light and fluffy add the vanilla and beat until well combined and smooth the mixture should be thick and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1050s 445ms/step - loss: 1.9448
+ovenproof ball of well pat into the dough or for about 3 minutes let cool completely on racks to cool completely store in an airtight container at room temperature for at least 1 preheat the oven to 350 degrees f line 2 baking sheets with parchment paper and roll dough as above dough on a lightly floured surface and press dough into the disks logs with the dough and roll them into a crescent to form the center and the dough and roll them into the dough and roll them into the dough and roll out dough on a lightly
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1053s 446ms/step - loss: 1.9423
+tooth-pick pipe 2 1 inch halve springform pan and chill until cold at least 2 inch and overhang wrap in plastic and chill until firm about 1 hour or 1 hour and up to 3 minutes then invert onto rack and cool completely before stacking or towel cut into wedges and serve with whipped cream and sold at most supermarkets and at specialty foods nonna's 1 cup 1 stick unsalted butter 1 1/2 cups granulated 1 large 1 large egg 1 1/2 teaspoons pure vanilla 1 cup roasted roasted 2 tablespoons finely grated lemon 1 teaspoon vanilla 1 cup roasted
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1042s 442ms/step - loss: 1.9363
+towels for the 1 1/4 c 175 degrees c at a time make the flour or a hand blend the eggs one at a time beating well after each addition add the flour and the orange-blossom water the mixture is mixed the batter should be thick and smooth the mixture should be thick and smooth the mixture should be thick and creamy about 2 minutes add the eggs one at a time beating well after each addition and beat in the egg and the butter and the remaining sugar until the mixture is smooth and smooth add the flour mixture
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1044s 443ms/step - loss: 1.9350
+caramel-peanut butter with room temperature or 105 at a time whisk together in a small bowl and a fine meal and broken into a chunky spoon about 2 tablespoons of a stand mixer fitted with a paddle attachment beat until smooth add eggs one at a time beating well after each addition and beat on medium speed until combined well fold in remaining egg mixture until just combined and fold in remaining egg mixture into batter and bake until a wooden pick or skewer inserted in center comes out clean about 1 hour and until golden and a wooden pick
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1044s 443ms/step - loss: 1.9298
+other side is golden drain on paper let the cake off about 1 hour off about 15 minutes remove from oven and let cool completely in the cake will be very fragile or offset spatula or a metal spatula to cool completely then remove the cake from the oven and immediately run a thin knife around inside of cake to loosen remove from the oven and leave to cool for 15 minutes before removing to cool for 10 minutes before removing to a wire rack to cool completely before bake for 30-40 minutes or until a toothpick inserted in the
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1050s 445ms/step - loss: 1.9248
+slight 8 minutes watch the dry way stick until the cookies has a moist darker this is just firm this is firm and the touch the the cake cooling a cooling rack and let the cookies cool in the pan on a wire rack and cool completely before storing the cake layer on a rack remove the cookies from the pan and the cake to a cooling rack and cool completely before storing the cake layer on a cooling rack and let the cookies sit at room temperature until the cookies are the cake feel set about 1 hour depending
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1048s 444ms/step - loss: 1.9197
+forms cool to cover cake 1 cup whole orange 1 teaspoon vanilla 1 1/2 teaspoons ground 1 cup all-purpose 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground 1 teaspoon ground
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1053s 446ms/step - loss: 1.9185
+cherry-chocolate white chocolate frosting in a hand rack for at least 1 hour before will be very warm or served 2 cups all-purpose 1 cup 2 sticks unsalted butter room 1 cup 2 large 1 teaspoon vanilla 1 teaspoon vanilla 1 teaspoon baking 1/4 teaspoon 1 cup 1 1/2 cups 2 sticks unsalted butter room 1 cup 2 large 1 teaspoon vanilla 1 cup 1 1/2 cups 2 sticks unsalted butter room 1 cup 2 large 1 teaspoon vanilla 1 cup 1 1/2 cups 2 sticks unsalted butter room 1 cup 2 large 1 teaspoon vanilla 1 teaspoon vanilla 1
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1052s 446ms/step - loss: 1.9178
+smooth-sided in the eggs one at a time then stir in the remaining 1/2 cup sugar and 1 teaspoon salt in a bowl with an electric mixer until light and fluffy about 3 minutes add the eggs one at a time beating well after each addition and beat in the vanilla and vanilla pour the batter into the prepared pan and bake for about 10 minutes in the center of the oven and let cake cool completely in the pan for a few minutes before removing to a serving plate and spread the glaze over the top of the cake
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1045s 443ms/step - loss: 1.9220
+bamboo 8 ounces time are dry mixture if level about 1 inch disk about 1 1/2 inches total cut out triangles about 1 1/2 cups all-purpose 1/4 cup unsweetened cocoa 1 1/2 teaspoons baking 1 teaspoon baking 1/2 teaspoon baking 1/4 teaspoon 1 stick unsalted butter room 1 large egg 1 1/2 cups all-purpose 1 teaspoon baking 1/2 teaspoon baking 1/4 teaspoon 1 stick unsalted butter room 1 large egg 1 1/2 cups granulated 1 cup granulated 1 tablespoon pure vanilla 1 1/2 cups all purpose 1 1/2 teaspoons baking 1 teaspoon baking 1/2 teaspoon baking 1/4 teaspoon 1 stick
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1050s 445ms/step - loss: 1.9143
+hands is slightly completely add sure mixed in the cake will take the the bowl into the prepared pan pour the batter into the prepared pan and smooth the pan over the top of the cake comes out clean let the cake cool in the pan for 10 minutes remove the cake from the oven and place the cake in the center of the cake place the cake in the center of the cake place the cake in the refrigerator for the cake for 5 minutes before serving dust the chocolate with chocolate and vanilla 1 cup chocolate 1/2 cup
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1053s 446ms/step - loss: 1.9014
+well-shaken place over remaining cake soak into the cake mix the flour baking powder and salt set a bowl of the whisk until smooth add the egg and the butter mixture to the butter-sugar mixture and the whisk on the sugar and continue to beat on high until the texture of the consistency of the flour the mixture into the bowl and beater with your mixer at the whisk until the mixture is smooth and smooth the mixture should be thick and creamy about 2 minutes add the egg and the vanilla and beat until the mixture is smooth and
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1049s 445ms/step - loss: 1.9173
+tuscan butter with chopped 7 large 2 large egg whites for pulse to a medium and pulse in a food processor until finely ground add butter and pulse until combined well add flour mixture and pulse just until combined well will be crumbly and divide batter between prepared baking sheets bake until golden brown and a wooden pick inserted into center comes out clean about 1 preheat oven to 350 degrees f with rack in middle line a large baking sheet with parchment paper butter and flour an out of dough roll out into a disk and wrap to a
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1058s 448ms/step - loss: 1.8943
+openings cover with foil or invert onto a serving plate and chill for at least 1 hour and up to 3 hours before serving dust 2 tablespoons 1 stick unsalted butter melted chocolate 1 cup all-purpose flour plus more for 1 cup 1 cup packed light brown 1 teaspoon baking 1/2 teaspoon baking 1/4 teaspoon 1 cup packed light brown 1 cup heavy 1 teaspoon vanilla 1 cup boiling preheat oven to 350 degrees f butter and flour an 8-inch square baking pan with nonstick spray line bottom with a round of parchment paper and line bottom with a round
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1051s 446ms/step - loss: 1.8904
+aerate 2 tablespoon bake until the cake is tester inserted near center comes out clean about 40 minutes cool in pan on a rack 10 minutes run a knife around edge of pan and invert onto rack of cake cool completely on rack in pan and unmold cake pan onto rack serve cake with more cake with orange sauce and slice the cake layer on a plate or plate of pan on top of cake allowing it to drip down sides of cake pan with foil and place seam side down on a plate and invert onto rack of cake
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1055s 447ms/step - loss: 1.8841
+ephron mixture from heat checking until pour mixture over cake and let stand for about 10 minutes let cool slightly about 2 hours remove cake from pan and place cake on platter and place 1 cake layer on platter cut cake into wedges serve with whipped cream and 1 1/2 cups plus 2 tablespoons 1 stick unsalted butter room 1 cup 2 large 1 teaspoon vanilla 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1 cup sour 1
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1045s 443ms/step - loss: 1.8818
+124 for a time until the cake be thick and remove the sides of the pot and save the stirring occasionally until it is set about 10 minutes let cool cool completely in the pan for a serving dish to the cake and remove the pan from the oven and let cool completely before lemon-buttermilk pound cake with vanilla 1 1/2 cups all-purpose 1 teaspoon baking 1 teaspoon baking 1/2 teaspoon 1 1-pint bag frozen for 1 cup all-purpose flour plus extra for 1 cup granulated sugar plus extra for 1 cup unsalted butter 1 cup granulated 1 teaspoon vanilla
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1044s 443ms/step - loss: 1.8810
+146 in the eggs one at the time until the top is set about 30 a little two of the cake in a large bowl mix together the flour baking powder and salt set aside in the microwave in a medium bowl combine the butter and sugar set aside in the microwave in a saucepan of the heat and the cake until smooth remove from the heat and stir in the sugar and the butter and the sugar until smooth add the vanilla and the eggs to the eggs one at a time beating well after each addition and beat
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1055s 447ms/step - loss: 1.8797
+first 2 cups white minutes transfer to a large piece of dough to loosen edge of white slices with slices and cut into 1 inch round cut into wedges and sprinkle with remaining filling if desired spread evenly in same manner bake until golden brown and center is just set about 15 minutes cool completely on baking sheets on racks to cool completely about 20 minutes transfer to racks to cool completely repeat with remaining dough and chill until firm about 1 hour or will firm as possible to transfer to a parchment-lined baking sheet spacing 1 inch apart sprinkle
+
+
+Epoch 1/1
+2359/2359 [==============================] - 1059s 449ms/step - loss: 1.8691
+rise in a draft-free place at warm room temperature until doubled in bulk 1 to a boil in a small saucepan over medium heat stirring often until sugar is dissolved and mixture is bubbling about 30 seconds pour pears over pears and let rise in a draft-free bring 1 at a time stirring constantly until mixture is smooth about 1 minute stir in blueberries and cover and chill until cold about 1 hour or will sink as necessary rearrange 1 cup of almonds strips and remaining pear almond mousse with blueberries and chill until cold at least 1 hour and
+
+
+Epoch 1/1
+1870/2359 [======================>.......] - ETA: 4:04 - loss: 1.8623

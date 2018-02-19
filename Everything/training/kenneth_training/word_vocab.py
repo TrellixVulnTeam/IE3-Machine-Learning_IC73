@@ -4,16 +4,17 @@ from keras import optimizers
 import h5py
 import numpy as np
 import pickle
-import gc
 
 
-f = open("half.txt", 'r')
+
+f = open("half.txt", 'r', encoding="utf-8")
 
 all_words = map(lambda l: l.split(" "), f.readlines())
 # vocab = {}
 more_words = []
 
 for line in all_words :
+    #value = unicode(value, "utf-8", errors="ignore")
     temp = line[:-1]
     for word in temp :
         word = word.lower()
@@ -29,7 +30,6 @@ for line in all_words :
         more_words.append(word)
 
 
-
 data = []
 for key in more_words :
     word = key
@@ -40,33 +40,35 @@ for key in more_words :
 chars = list(set(data))
 VOCAB_SIZE = len(chars)
 
+
+
+
 # Some constraints that weren't explained in the tutorial so I just made up some numbers
 HIDDEN_DIM = 200
 LAYER_NUM  = 2
-BATCH_SIZE = 4
+BATCH_SIZE = 10
 GENERATE_LENGTH = 100
-SEQ_LENGTH = 200
+SEQ_LENGTH = 180
 
 length = int(len(data)/SEQ_LENGTH)
-
 
 # Creates the mapping between the characters and orders the characters by least to most frequent
 # only need to run once. later, just load it from pickle file
 
-ix_to_char = {ix:char for ix, char in enumerate(chars)}
-char_to_ix = {char:ix for ix, char in enumerate(chars)}
+# ix_to_char = {ix:char for ix, char in enumerate(chars)}
+# char_to_ix = {char:ix for ix, char in enumerate(chars)}
 
 #print(ix_to_char)
 # Used to save a mapping to keep it consistent between runs
 
-# pickle_file = "word_mappings.p"
+pickle_file = "word_mappings.p"
 # combined_dict = [ix_to_char, char_to_ix]
 # with open(pickle_file, "wb") as picked :
 #     pickle.dump(combined_dict, picked)
-#
 
-# with open(pickle_file, "rb") as picked :
-#     ix_to_char,char_to_ix = pickle.load(picked)
+
+with open(pickle_file, "rb") as picked :
+    ix_to_char,char_to_ix = pickle.load(picked)
 
 def generate_text(model, length):
     ix = [np.random.randint(VOCAB_SIZE)]
@@ -99,7 +101,7 @@ print(int(len(data)))
 print(length)
 print(SEQ_LENGTH)
 print(VOCAB_SIZE)
-
+#
 #
 #
 # Create a training array for *length* number of sequences
@@ -120,7 +122,8 @@ for i in range(0, length):
     y[i] = target_sequence
 print(X)
 print(y)
-
+#
+#
 # Sequential is just a stack of layers
 # each layer added with model.add(...)
 #
@@ -155,7 +158,7 @@ model.compile(loss="categorical_crossentropy", optimizer="adam")
 
 nb_epoch = 0
 #load weights in future runs
-#model.load_weights("checkpoint_200_epoch_++40.hdf5")
+model.load_weights("checkpoint_200_epoch_+++120.hdf5")
 generate_text(model, GENERATE_LENGTH)
 while True:
     print('\n\n')
@@ -163,4 +166,4 @@ while True:
     nb_epoch += 1
     generate_text(model, GENERATE_LENGTH)
     if nb_epoch % 10 == 0:
-        model.save_weights('checkpoint_{}_epoch_+++{}.hdf5'.format(HIDDEN_DIM, nb_epoch))
+        model.save_weights('checkpoint_{}_epoch_{}.hdf5'.format(HIDDEN_DIM, nb_epoch))
