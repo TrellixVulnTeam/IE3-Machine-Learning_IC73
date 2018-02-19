@@ -7,8 +7,9 @@ from keras import optimizers
 import numpy as np
 import h5py
 import pickle
+from generate_with_seed import *
 
-file_name = "TolkiensMiddleEarth.txt"
+file_name = "./kenneth_training/parsed_text.txt"
 data = open(file_name, 'r').read()
 data = data.lower()
 data = list(data.rstrip())
@@ -18,10 +19,8 @@ SEQ_LENGTH = 1000
 length = int(len(data)/SEQ_LENGTH)
 
 # LOAD THE PICKLE
-with open('lotr_pickle.p', 'rb') as handle:
+with open('./kenneth_training/char_recipe_parsed_pickle.p', 'rb') as handle:
 	[ix_to_char, char_to_ix] = pickle.load(handle)
-
-print(ix_to_char)
 
 def generate_text(model, length):
     ix = [np.random.randint(VOCAB_SIZE)]
@@ -35,7 +34,7 @@ def generate_text(model, length):
     return ('').join(y_char)
 
 
-model = load_model('tolkienmodel40.h5')
+model = load_model('./kenneth_training/char_recipe_model190.h5')
 print("\n")
-generate_text(model, 300)
+generate_with_seed(model, './kenneth_training/char_recipe_parsed_pickle.p', 1000)
 print("\n")

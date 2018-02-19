@@ -3,8 +3,9 @@ from keras.layers import Dense, Activation, LSTM, TimeDistributed
 from keras import optimizers
 import numpy as np
 import h5py
+import pickle
 
-file_name = "all_files.txt"
+file_name = "parsed_text.txt"
 data = open(file_name, 'r').read()
 data = data.lower()
 data = list(data.rstrip())
@@ -26,6 +27,8 @@ length = int(len(data)/SEQ_LENGTH)
 ix_to_char = {ix:char for ix, char in enumerate(chars)}
 char_to_ix = {char:ix for ix, char in enumerate(chars)}
 
+with open('char_recipe_parsed_pickle.p', 'wb') as handle:
+    pickle.dump([ix_to_char, char_to_ix], handle, protocol = pickle.HIGHEST_PROTOCOL)
 
 def generate_text(model, length):
     ix = [np.random.randint(VOCAB_SIZE)]
@@ -53,11 +56,6 @@ def generate_text(model, length):
 
 X = np.zeros((length, SEQ_LENGTH, VOCAB_SIZE))
 y = np.zeros((length, SEQ_LENGTH, VOCAB_SIZE))
-
-print(int(len(data)))
-print(length)
-print(SEQ_LENGTH)
-print(VOCAB_SIZE)
 
 
 # Create a training array for *length* number of sequences
@@ -99,23 +97,23 @@ for i in range(0, length):
 # TimeDistributed - "This wrapper applies a layer of temporal slice of an input"
 
 
-#
-#
-# model = Sequential()
-# model.add(LSTM(HIDDEN_DIM, input_shape=(None, VOCAB_SIZE), return_sequences=True))
-# for i in range(LAYER_NUM - 1):
-#     model.add(LSTM(HIDDEN_DIM, return_sequences=True))
-# model.add(TimeDistributed(Dense(VOCAB_SIZE)))
-# model.add(Activation('softmax'))
-# adam = optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False) # Adam optimizer Jared told us to use
-# model.compile(loss="categorical_crossentropy", optimizer=adam)
-#
-# nb_epoch = 0
-# while True:
-#     print('\n\n')
-#     model.fit(X, y, batch_size=BATCH_SIZE, verbose=1, epochs=1)
-#     nb_epoch += 1
-#     generate_text(model, GENERATE_LENGTH)
-#     if nb_epoch % 10 == 0:
-#         # model.save_weights('checkpoint_{}_epoch_{}.hdf5'.format(HIDDEN_DIM, nb_epoch))
-#         model.save('my_model'+str(nb_epoch)+'.h5')
+
+
+model = Sequential()
+model.add(LSTM(HIDDEN_DIM, input_shape=(None, VOCAB_SIZE), return_sequences=True))
+for i in range(LAYER_NUM - 1):
+    model.add(LSTM(HIDDEN_DIM, return_sequences=True))
+model.add(TimeDistributed(Dense(VOCAB_SIZE)))
+model.add(Activation('softmax'))
+adam = optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False) # Adam optimizer Jared told us to use
+model.compile(loss="categorical_crossentropy", optimizer=adam)
+
+nb_epoch = 0
+while True:
+    print('\n\n')
+    model.fit(X, y, batch_size=BATCH_SIZE, verbose=1, epochs=1)
+    nb_epoch += 1
+    generate_text(model, GENERATE_LENGTH)
+    if nb_epoch % 10 == 0:
+        # model.save_weights('checkpoint_{}_epoch_{}.hdf5'.format(HIDDEN_DIM, nb_epoch))
+        model.save('char_recipe_model'+str(nb_epoch)+'.h5')
