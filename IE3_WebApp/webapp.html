@@ -1,0 +1,81 @@
+<html>
+
+<head>
+  <title>ie3-ml</title>
+  <meta charSet="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:image" content="">
+  <link rel="shortcut icon" href="ml_favicon.png" />
+
+
+  <link rel="stylesheet" href="https://www.launchaco.com/static/AllTemplates.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    label{
+      color: white;
+    }
+    </style>
+</head>
+
+<body class="font-neutral black-accent">
+
+  <div class="black-accent">
+    <!---->
+    <header class="header">
+      <div class="container-lrg">
+        <div class="flex col-12 spread">
+          <a class="logo primary-color launchaco-builder-hoverable" href="index.html">ie3-ml</a>
+          <a href="mailto:kennethgomez2020@u.northwestern.edu" class="nav-link secondary-color mr0 email header-email accent-bg">Contact</a>
+        </div>
+      </div>
+    </header>
+    <section class="section">
+      <div class="container mb40">
+          <div class="col-12 text-center">
+            <h1 class="heading-lrg primary-color launchaco-builder-hoverable">The Generator</h1>
+            <h2 class="subheading secondary-color mt20 launchaco-builder-hoverable">Enter seed text and select a model and see what our generator comes up with</h2>
+            <div class="mt40">
+            </div>
+          </div>
+        </div>
+      <form>
+        <div class="container">
+          <div class="row">
+            <div class="form-group col-lg-8">
+              <label for="seedText">Enter seed text</label>
+              <textarea class="form-control" id="seedText" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-lg-4">
+              <label for="sequenceLength">Sequence Length</label>
+              <input type="number" class="form-control" id="sequenceLength" placeholder="300">
+            </div>
+            <div class="form-group col-lg-4">
+              <label for="selectModel">Select model</label>
+              <select class="form-control" id="selectModel">
+              <option>Baking (Character model)</option>
+              <option>Baking (Word model)</option>
+              <option>Poetry</option>
+              <option>Lord of the Rings</option>
+            </select>
+            </div>
+          </div>
+            <button class="button" type="submit">Submit</button>
+
+      </form>
+      <div class="row">
+        <div class="col-lg-8" style="margin-top: 30px;">
+          <label for="output">Output:</label>
+        <textarea class="form-control" id="output" rows="6"></textarea>
+      </div>
+    </div>
+        </div>
+      <!---->
+      </div>
+    </section>
+
+</body>
+
+</html>
