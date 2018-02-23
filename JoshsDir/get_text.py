@@ -1,9 +1,11 @@
 def text_query(file_name, text, str_len):
     output = ""
+    found_text = False
     flag1 = False
     with open(file_name, encoding='utf8') as infile:
         for line in infile:
             if line.find(text) != -1 or flag1:
+                found_text = True
                 if not flag1 and line.find(text)+str_len < len(line):
                     output += line[line.find(text):line.find(text)+str_len]
                     break
@@ -17,8 +19,12 @@ def text_query(file_name, text, str_len):
                 else:
                     output += line[0:len(line)]
                     str_len -= len(line) - line.find(text)
-        return output
+        if (found_text):
+            return output
+        else:
+            return False
+        
+    
 
-
-my_str = text_query("test.txt", "darkness", 500)
-print(my_str)
+# my_str = text_query("test.txt", "darkness", 500)
+# print(my_str)
