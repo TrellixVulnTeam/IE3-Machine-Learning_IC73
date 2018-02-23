@@ -5,7 +5,7 @@ import numpy as np
 import h5py
 import pickle
 
-file_name = "TolkiensMiddleEarth.txt"
+file_name = "./Source_text/TolkiensMiddleEarth.txt"
 data = open(file_name, 'r').read()
 data = data.lower()
 data = list(data.rstrip())
