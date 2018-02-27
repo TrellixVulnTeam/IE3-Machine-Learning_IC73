@@ -103,7 +103,7 @@ for i in range(0, length):
 
 
 # CHANGE THIS TO BE YOUR MODEL !!!!
-model = load_model('./models/tolkienmodel140.h5')
+model = load_model('./models/tolkienmodel160.h5')
 
 nb_epoch = 140 ########## CHANGE THIS TOO!
 while True:
