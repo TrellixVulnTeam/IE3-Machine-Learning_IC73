@@ -159,11 +159,12 @@ model.compile(loss="categorical_crossentropy", optimizer="adam")
 nb_epoch = 0
 #load weights in future runs
 model.load_weights("checkpoint_200_epoch_+++120.hdf5")
-generate_text(model, GENERATE_LENGTH)
-while True:
-    print('\n\n')
-    model.fit(X, y, batch_size=BATCH_SIZE, verbose=1, epochs=1)
-    nb_epoch += 1
-    generate_text(model, GENERATE_LENGTH)
-    if nb_epoch % 10 == 0:
-        model.save_weights('checkpoint_{}_epoch_{}.hdf5'.format(HIDDEN_DIM, nb_epoch))
+model.save("final_model_word_recipes.h5")
+# generate_text(model, GENERATE_LENGTH)
+# while True:
+#     print('\n\n')
+#     model.fit(X, y, batch_size=BATCH_SIZE, verbose=1, epochs=1)
+#     nb_epoch += 1
+#     generate_text(model, GENERATE_LENGTH)
+#     if nb_epoch % 10 == 0:
+#         model.save_weights('checkpoint_{}_epoch_{}.hdf5'.format(HIDDEN_DIM, nb_epoch))

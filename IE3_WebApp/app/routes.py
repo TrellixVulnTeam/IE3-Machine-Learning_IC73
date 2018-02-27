@@ -6,7 +6,7 @@ from flask import render_template, flash, redirect, request
 
 @app.route('/')
 def index():
-    return render_template('index.html', title='Home')
+    return render_template('webapp.html', title='Home')
 
 @app.route('/generate', methods = ['POST', 'GET'])
 def generate():
