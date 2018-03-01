@@ -14,7 +14,7 @@ session={}
 
 @app.route('/')
 def index():
-    return render_template('webapp.html', title='Home')
+    return render_template('index.html', title='Home')
 
 @app.route('/generate', methods = ['POST', 'GET'])
 def generate():
@@ -23,7 +23,7 @@ def generate():
         seed = request.form.get('seed')
         modelType = request.form.get('modelType')
         seqLen = request.form.get('len')
-        
+
         seqLen = int(seqLen)
         modelType = int(modelType)
         model = None
@@ -31,25 +31,31 @@ def generate():
         if modelType == 1:
                 model = load_model("./app/models/char_recipe_model190.h5")
                 pickle = "./app/pickles/char_recipe_parsed_pickle.p"
+        elif modelType == 2:
+                model = load_model("./app/models/final_model_word_recipes.h5")
+                pickle = "./app/pickles/word_mappings.p"
+        elif modelType == 3:
+                model = load_model("./app/models/poemmodel100.h5")
+                pickle = "./app/pickles/poem_pickev2.p"
+        elif modelType == 4:
+                model = load_model("./app/models/tolkienmodel230.h5")
+                pickle = "./app/pickles/lotr_pickle.p"
 
         output = generate_with_seed(seed, model, pickle, seqLen)
-
-
         session['output'] = output
+
         if seed!=None:
             return redirect('/output')
+
     return render_template('webapp.html', title="Generate")
 
-@app.route('/output')
+@app.route('/output', methods = ['POST', 'GET'])
 def output():
     output = session.get('output', None)
-    return ("""
-    <html>
-        <body>
-            <p>{}</p>
-        </body>
-    </html>""".format(output)
-    )
+    if request.method == 'POST':
+        return redirect('/generate')
+    return render_template('results.html', source=output, generated=output)
+
 
 
 
