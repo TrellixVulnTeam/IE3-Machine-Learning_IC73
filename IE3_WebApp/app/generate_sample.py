@@ -57,6 +57,7 @@ def generate_with_seed(seed, model, picklename, length):
     for i in range(length):
         X[0, i, :][ix[-1]] = 1
         print(ix_to_char[ix[-1]], end="")
+        import pdb; pdb.set_trace()
         ix = np.argmax(model.predict(X[:, :i+1, :])[0], 1)
         y_char.append(ix_to_char[ix[-1]])
     return ('').join(y_char)
@@ -67,23 +68,44 @@ print("\n")
 """
 
 def generate_with_seed_word(seed, model, picklename, length):
+    # with open(picklename, 'rb') as handle:
+    #     [ix_to_char, char_to_ix] = pickle.load(handle)
+    #
+    # VOCAB_SIZE = len(ix_to_char)
+    # # seed = input("enter seed text: ")
+    # # print("\n")
+    #
+    # ix = [char_to_ix[seed[-1]]]
+    # y_char = [ix_to_char[ix[-1]]]
+    # X = np.zeros((1, length, VOCAB_SIZE))
+    #
+    # # for t, char in enumerate(seed):
+    # #     X[0, t, :][char_to_ix[char]] = 1
+    # X[0][char_to_ix[seed]] = 1
+    #
+    # for i in range(length):
+    #     X[0,i,:][ix[-1]] = 1
+    #     print(ix_to_char[ix[-1]], end=" ")
+    #     ix = np.argmax(model.predict(X[:, :i+1, :])[0], 1)
+    #     y_char.append(ix_to_char[ix[-1]])
+    # return ('').join(y_char)
+
+
     with open(picklename, 'rb') as handle:
         [ix_to_char, char_to_ix] = pickle.load(handle)
 
     VOCAB_SIZE = len(ix_to_char)
-    # seed = input("enter seed text: ")
-    # print("\n")
+    #seed = input("enter seed text: ")
+    print("\n")
 
-    ix = [char_to_ix[seed[-1]]]
+    ix = [np.random.randint(VOCAB_SIZE)]
     y_char = [ix_to_char[ix[-1]]]
     X = np.zeros((1, length, VOCAB_SIZE))
-
-    for t, char in enumerate(seed):
-        X[0, t, :][char_to_ix[char]] = 1
 
     for i in range(length):
         X[0,i,:][ix[-1]] = 1
         print(ix_to_char[ix[-1]], end=" ")
+        import pdb; pdb.set_trace()
         ix = np.argmax(model.predict(X[:, :i+1, :])[0], 1)
         y_char.append(ix_to_char[ix[-1]])
     return ('').join(y_char)

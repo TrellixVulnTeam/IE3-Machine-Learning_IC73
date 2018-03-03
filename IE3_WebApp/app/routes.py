@@ -38,7 +38,7 @@ def generate():
         elif modelType == 2:
                 model = load_model("./app/models/final_model_word_recipes.h5")
                 pickle = "./app/pickles/word_mappings.p"
-                corpus = "./app/corpi/parsed_text.txt"
+                corpus = "./app/corpi/all_files.txt"
                 output = generate_with_seed_word(seed, model, pickle, seqLen)
         elif modelType == 3:
                 model = load_model("./app/models/poemmodel100.h5")
